@@ -1,0 +1,199 @@
+SDET-
+Selenium Hybrid Framework -
+(python,selenium,pytest,page object model,html reports)
+-----------------------------------
+framework - it is an organised way of maintaining automation files.
+In the framework all the files will communicate each other to perform certain task
+
+objective/goals :
+1) Reusability
+2) Maintainability
+
+types
+----------------
+1) built in framework
+    pytest,robotframework,unittest etc....
+
+2) customized/user defined framework
+    datadriven, keyword driven , hybrid driven
+
+phases
+-------------------
+1) 1) analyse application, technology and skill set, choose test cases
+how to choose test cases for automation -
+    100 TC's
+    why automation - to overcome challenges for retesting and regression cases
+    Retest case - data driven
+    test cases can be automatable
+
+    100% automation -
+
+    2) design and implementation of framework
+    3) Execution
+    4) Maintanace(version control tool)
+
+   eCommerce Application -
+
+Test Data -
+1) static data
+2) random data
+
+utility file - to read data from ini file
+for Reusability
+we cant directly read data from ini file so we will use utilities packages
+
+step1 : Create new project and install required packages/plugins
+settings - python interpreter
+- Selenium - Selenium Libraries
+- Pytest - python unit test framework
+- pytest-html - PyTest HTML Reports
+- pytest-xdist - Run Test parallel
+- Openpyxl - MS Excel Support
+- Allure-pytest - to generate allure reports
+
+
+step2 - Create folder structure
+
+project name -
+    -Page Objects(package)
+    -testCases(package)
+    -utilities(packages)
+    -TestData(folder)
+    -Configuration(folder)
+    -logs(folder)
+    -screenshot(folder)
+    -Reports(folder)
+    -Run.bat
+
+ step3 - Automating Login Test Cases
+    3.1 - Create LoginPage Object Class Under "PageObject"
+    3.2 - Create Login Test under "testCases"
+    3.3 - Create confest.py under "testCase"
+
+
+
+step 6  - Adding logs to test cases
+6.1 - Add customLogger
+6.2 - Add logs to Login test cases
+
+logger - log file creation and format of log file
+so we need to import "logging" which is in python
+need to do some configuration -
+first parameter = where need to generate logs
+logging.basicConfig(filename=".\\Logs\\automation.log",
+                        format = " )
+logger object will return logs
+add logs in test cases
+
+step 7:
+ 7.1 - update conftest.py with required Fixtures which will accept command line argument(browser)
+ 7.2 - pass browser name as argument in command line
+
+we will get browser from command prompt so we need to write method in conftest.py
+
+To run tests on desired browser
+pytest -s -v testCases/test_login.py --browser chrome
+pytest -s -v testCAses/test_login.py --browser firefox
+
+To Run tests parallel
+pytest -s -v -n=3 testCases/test_login.py --browser chrome
+pytest -s -v -n=3 testCAses/test_login.py --browser firefox
+
+cmd to run -> pytest -v -s testCases/test_login.py
+
+ - modify conftest.py
+ run test cases on multiple browsers
+
+
+ Step 8 - generate HTML Report
+ 8.1 - update confest.py with pytest hooks
+ 8.2 To generate HTML report run below command
+
+pytest -s -v -n=3 --html=Reports/report.html testCases/test_login.py --browser chrome
+
+step 9 - Automating data driven test case
+ 9.1 - prepare test data in Excel sheet, place the excel file inside the TestData folder
+ 9.2 - create "ExcelUtils.py" utility class under utilities package
+ 9.3 - create LoginDataDrivenTest under testcases
+ 9.4 - Run the test case
+
+ step 10 - Adding new testcases
+ 1) add new customer
+ 2) search customer by email
+ 3) search customer by name
+
+step 11 - Grouping Tests
+
+11.1 - grouping markers (add markers to every test method)
+    @pytest.mark.sanity
+    @pytest.mark.regression
+
+11.2 Add Marker entries in pytest.ini file
+pytest.ini
+
+[pytest]
+markers*
+    sanity
+    regression
+
+-m "sanity"
+-m "regression"
+-m "sanity and regression"
+-m "sanity or regression"
+
+Run Command - pytest -s -v -m "sanity or regression" --html=./Reports/report.html testcases/- browser chrome
+
+
+step 12 - Run Tests in command prompt and run .bat file
+copy location of your project - paste in notepad
+go to location through c drive ---> create run.bat file ---> right click and edit --> it will open in notepad -
+copy command and paste into runner bat file
+
+
+12.1 create run .bat file
+
+command -> pytest -s -v -m "sanity" --html=./Reports/report.html testCases/ --browser chrome
+comment using -> rem pytest -s -v -m "sanity" --html=./Reports/report.html testCases/ --browser chrome
+double click on file -> it will start running test cases
+
+12.2 OPen command promp as Administartor and then run .bat file
+
+step 13 - push
+-1) create local git repository for your project
+2) git bash me khudke project me jao
+    git init -> create empty git local repo
+
+
+
+install jenkins through war files -
+download jar file save in folder - open cmd prompt -
+cmd -> java -jar jenkins.war (run everytime for run jenkins)
+
+
+
+11.3 select groups at run time
+
+
+specially sanity and regression test cases need to be run
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

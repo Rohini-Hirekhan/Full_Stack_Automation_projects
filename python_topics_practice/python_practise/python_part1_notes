@@ -1,0 +1,194 @@
+"""
+we can covert one type value into another type is called type casting
+following inbuilt functions for type casting -
+int()
+float()
+complex()
+str()
+bool()
+1) int()
+print(int(456.678)) 456
+print(int("rooho")) - invalid literal for int() with base 10: 'rooho'
+print(int("23")) - 23
+print(True) - True
+print(int(2+34j)) - TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
+1. We can convert from any type to int except complex type.
+2. If we want to convert str type to int type, compulsary str should contain only integral
+value and should be specified in base-10
+
+
+
+"""
+print(int(456.678))
+# 456
+print(int("rooho"))
+# invalid literal for int() with base 10: 'rooho'
+print(int("23"))
+# 23
+print(True)
+# True
+print(int(2+34j))
+# TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
+
+
+"""
+2) float - We can use float() function to convert other type values to float type.
+print(float(234))
+# 234.0
+# print(float("rohini"))
+# ValueError: could not convert string to float: 'rohini'
+print(float("45"))
+# 45.0
+print(float("45.898"))
+# 45.898
+print(float(False))
+# 0.0
+print(float(True))
+# 1.0
+print(float(23+67j))
+# TypeError: float() argument must be a string or a real number, not 'complex'
+
+Note:
+1. We can convert any type value to float type except complex type.
+2. Whenever we are trying to convert str type to float type compulsary str should be
+either integral or floating point literal and should be specified only in base-10.
+"""
+print(float(234))
+# 234.0
+# print(float("rohini"))
+# ValueError: could not convert string to float: 'rohini'
+print(float("45"))
+# 45.0
+print(float("45.898"))
+# 45.898
+print(float(False))
+# 0.0
+print(float(True))
+# 1.0
+print(float(23+67j))
+# TypeError: float() argument must be a string or a real number, not 'complex'
+
+
+"""
+bool() - We can use this function to convert other type values to bool type.
+print(bool(0))
+# False
+
+print(bool(1))
+# True
+
+print(bool(34+56j))
+# True
+
+print(bool(56.78))
+# True
+
+print(bool(0+0j))
+# False
+
+print(bool("ghh"))
+# True
+
+print(bool(""))
+# False
+
+"""
+print(bool(0))
+# False
+
+print(bool(1))
+# True
+
+print(bool(34+56j))
+# True
+
+print(bool(56.78))
+# True
+
+print(bool(0+0j))
+# False
+
+print(bool("ghh"))
+# True
+
+print(bool(""))
+# False
+
+"""
+str():
+We can use this method to convert other type values to str type
+
+
+"""
+
+print(str(45))
+# 45
+
+print(str(56.77))
+# 56.77
+
+print(str(56+56j))
+# (56+56j)
+
+print(str(True))
+# True
+
+print("rt")
+# rt
+
+
+"""
+complex -We can use complex() function to convert other types to complex type
+
+print(complex(34))
+# (34+0j)
+
+print(complex(True))
+# (1+0j)
+
+print(complex(False))
+# 0j
+
+print(complex(45.677))
+# (45.677+0j)
+
+print(complex("rohini"))
+# ValueError: complex() arg is a malformed string
+
+print(complex("456.5"))
+# (456.5+0j)
+
+print(complex("45"))
+# (45+0j)
+
+Form-2: complex(x,y)
+We can use this method to convert x and y into complex number such that x will be real
+part and y will be imaginary part.
+
+
+"""
+print(complex(34))
+# (34+0j)
+
+print(complex(True))
+# (1+0j)
+
+print(complex(False))
+# 0j
+
+print(complex(45.677))
+# (45.677+0j)
+
+# print(complex("rohini"))
+# ValueError: complex() arg is a malformed string
+
+print(complex("456.5"))
+# (456.5+0j)
+
+print(complex("45"))
+# (45+0j)
+
+print(complex(12,-90))
+# (12-90j)
+
+---------------------------------------------------------

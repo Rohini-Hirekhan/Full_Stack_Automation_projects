@@ -1,0 +1,33 @@
+#iw que - diff between remove() and pop()
+remove() ->
+1. we can use to remove special element from the list
+2. it cant return any value
+3. if special element not avaliable then we get VALUE ERROR
+
+pop() ->
+1. we can use to remove last element from the list
+2. it returned removed element
+3. if list is empty then we get error.
+
+iw- difference between append() and insert()
+# append() -> In list when we add any element it will come in last i.e it will be last element
+# insert() -> In list we can insert any elements in particular index numbers
+
+diff bet list and tuple -
+list and tuple are exactly same except small difference: list objects are mutable where as Tuple objects are immutable
+In both cases insertion order is preserved, duplicate objects are allowed,heterogeneous objects are allowed, index and slicing are
+supported
+
+List -
+- list is a group of comma seperated value within square bracket and square brackets are manadatory.
+e.g i = [12,43,21,32]
+- list objects are mutable i.e once we create list object we can perform any changes in that object
+- if the content is not fixed and keep on changing then we should go for List
+- list objects can not used as keys for dictionaries because keys should be hashable and immutable
+
+
+Tuple -
+- tuple is a group of comma seperated values within parenthesis and parenthesis are optional
+- tuple objects are immutable.i.e once we creates tuple object we cannot change its content
+- if the content is fixed and never changes then we should go for tuple
+- tuple objects can be used as keys for dictionaries because keys should be hashble and immutable

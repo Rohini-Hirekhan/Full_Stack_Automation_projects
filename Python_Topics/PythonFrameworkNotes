@@ -1,0 +1,32 @@
+Steps to create framework
+
+pip install selenium
+pip install pytest
+
+create folder structure -
+create package -
+1)pages
+    - HomePage.py
+    - LoginPage.py
+2)tests
+    - test_LoginPage.py
+    - test_HomePage.py
+    - confest.py
+3)config
+    -config.py
+        -
+
+Execution workflow -
+Base test -> Fixture (launch browser from fixture) ->
+test_LoginPage.py ( create object then constructor will call of LoginPage.py , get url) ->
+come back to test_LoginPage.py start assert
+
+Generate HTML -
+    - install package - pip install pytest-html
+    cmd to run - pytest Test/test_LoginPage.py -v --html=./hubSpot.html
+    ./ -> indicate root directory then give name of html
+
+Parallel Execution -
+pytest parallel test execution - pip install pytest-xdist
+cmd to run in parallel mode - pytest Test/test_LoginPage.py -v -n 3 --html=./hubSpot.html
+    - generate 3 threads , 3 working group with html reports

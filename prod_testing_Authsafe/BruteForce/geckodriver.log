@@ -1,0 +1,161 @@
+1694800630960	geckodriver	INFO	Listening on 127.0.0.1:54822
+1694800634139	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54823" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofileNMyGeT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694800635168	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694800635356	Marionette	INFO	Listening on port 54830
+WebDriver BiDi listening on ws://127.0.0.1:54823
+Read port: 54830
+1694800635806	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54823/devtools/browser/0bcfe8c7-3c9c-44cb-b9a5-32f9b69d8b52
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://test.authsafe.ai."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://test.authsafe.ai."
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1694801890842	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1694802054834	Marionette	INFO	Stopped listening on port 54830
+Dynamically enable window occlusion 1
+1694833478751	geckodriver	INFO	Listening on 127.0.0.1:50211
+1694833481856	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50212" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofile6VhLgy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694833482663	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694833482822	Marionette	INFO	Listening on port 50222
+WebDriver BiDi listening on ws://127.0.0.1:50212
+Read port: 50222
+1694833483159	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50212/devtools/browser/52e4b189-c202-404c-9079-3a67f8162128
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://test.authsafe.ai."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://test.authsafe.ai."
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js, line 7: TypeError: window.intlTelInputGlobals.instances[b][a] is not a function
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://p.authsafe.ai/as.js?p=7481797363365733, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1694833561079	Marionette	INFO	Stopped listening on port 50222
+Dynamically enable window occlusion 1

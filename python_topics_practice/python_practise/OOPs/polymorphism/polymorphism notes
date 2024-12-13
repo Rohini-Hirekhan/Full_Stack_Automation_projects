@@ -1,0 +1,44 @@
+poly means many. Morphs means forms.
+Polymorphism means 'Many Forms'.
+Eg1: Yourself is best example of polymorphism.In front of Your parents You will have one
+type of behaviour and with friends another type of behaviour.Same person but different
+behaviours at different places,which is nothing but polymorphism.
+Eg2: + operator acts as concatenation and arithmetic addition
+Eg3: * operator acts as multiplication and repetition operator
+Eg4: The Same method with different implementations in Parent class and child
+classes.(overriding)
+Related to Polymorphism the following 4 topics are important
+1) Duck Typing Philosophy of Python
+2) Overloading
+1) Operator Overloading
+2) Method Overloading
+3) Constructor Overloading
+3) Overriding
+1) Method Overriding
+2) Constructor Overriding
+
+Overloading
+ We can use same operator or methods for different purposes.
+Eg 1: + operator can be used for Arithmetic addition and String concatenation
+ print(10+20)#30
+ print('durga'+'soft')#durgasoft
+Eg 2: * operator can be used for multiplication and string repetition purposes.
+ print(10*20)#200
+ print('durga'*3)#durgadurgadurga
+Eg 3: We can use deposit() method to deposit cash or cheque or dd
+ deposit(cash)
+ deposit(cheque)
+ deposit(dd)
+
+1)Operator Overloading:
+ We can use the same operator for multiple purposes, which is nothing but operator
+overloading.
+ Python supports operator overloading
+
+Eg 1: + operator can be used for Arithmetic addition and String concatenation
+ print(10+20)#30
+ print('durga'+'soft')#durgasoft
+Eg 2: * operator can be used for multiplication and string repetition purposes.
+ print(10*20)#200
+ print('durga'*3)#durgadurgadurga
+

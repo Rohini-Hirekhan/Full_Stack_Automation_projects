@@ -1,0 +1,189 @@
+DURGA
+1) program to reverse the given string
+program to reverse order of words
+program to reverse internal content of each word
+WAP to print characters at odd position and even position for the given string
+program to merge characters of 2 strings into a single string by taking characters alternatively
+WAP to sort characters of the string and first alphabet symbols followed by numeric values
+WAP input - a4b3c2 , output - aaaabbbcc
+WAP to perform ip- a4k3b2 , op - aeknbd
+remove duplicate characters from the given ip string- ip -
+program to find number of occurences of each character present in string
+------------------------------------------------------------------------------
+1) program to reverse the given string
+sol1 - a="rushi"
+print(a[::-1])
+
+sol2-
+s= input("enter a string : ")
+i = len(s)-1
+while i>=0:
+    print(s[i],end="")
+    i-=1
+
+-------------------------------------------------
+2) program to reverse order of words
+
+program to reverse order of words
+i/p - > I am happy
+o/p -> happy amm i
+
+s="I am happy"
+l1=[]
+l=s.split()
+print(len(l))
+i=len(l)-1
+print(i)
+while i>=0:
+    l1.append(l[i])
+    i=i-1
+output = ' '.join(l1)
+print(output)
+-------------------------------------------------------------
+program to reverse internal content of each word -
+s = "rohini is good girl"
+n = s.split()
+l1=[]
+i=0
+while i<len(n):
+   l1.append(n[i][::-1])
+   i=i+1
+output = ' '.join(l1)
+print(output)
+----------------------------------------------------------------------
+WAP to print characters at odd position and even position for the given string
+# WAP to print characters at odd position and even position for the given string
+s="rohini"
+# s=rhn
+# s=oii
+i=0
+print("chracters at even position : ")
+while i<len(s):
+   print(s[i],end='')
+   i=i+2
+print("\nchracters at odd position : ")
+i=1
+while i<len(s):
+   print(s[i],end='')
+   i=i+2
+
+output -
+chracters at even position :
+rhn
+chracters at odd position :
+oii
+---------------------------------------------------------------------------
+program to merge characters of 2 strings into a single string by taking characters alternatively
+# program to merge characters of 2 strings into a single string by taking characters alternatively
+# s1=ravi
+# s2=reja
+# o/p-> rraevjia
+
+s1="ravi"
+s2 ="reja"
+output=""
+i,j=0,0
+while i<len(s1) or j<len(s2):
+   if i<len(s1):
+      output=output+s1[i]
+      i+=1
+   if j<len(s2):
+      output=output+s2[j]
+      j+=1
+print(output)
+-------------------------------------------------------------------------------------------------------------
+WAP to sort characters of the string and first alphabet symbols followed by numeric values
+input: B4A1D3
+Output: ABD134
+
+s="B4A1D3"
+s1=s2=output=""
+for i in s:
+    if i.isalpha():
+        s1=s1+i
+    else:
+        s2=s2+i
+for x in sorted(s1):
+    output=output+x
+for x in sorted(s2):
+    output=output+x
+print(output)
+----------------------------------------------------------------------------------------
+WAP input - a4b3c2 , output - aaaabbbcc
+-------------------------------------------------------------------------------------------
+WAP to perform ip- a4k3b2 , op - aeknbd
+--------------------------------------------------------------------------------------------
+remove duplicate characters from the given ip string-
+input: ABCDABBCDABBBCCCDDEEEF
+output: ABCDEF
+
+s = "ABCDABBCDABBBCCCDDEEEF"
+l=[]
+for i in s:
+    if i not in l:
+        l.append(i)
+        l1=''.join(l)
+
+print(l1)
+---------------------------------------------------------------------------------------------
+program to find number of occurences of each character present in string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Python program to check whether the string is Symmetrical or Palindrome
+Reverse words in a given String in Python
+Ways to remove i’th character from string in Python
+Find length of a string in python (4 ways)
+Python – Avoid Spaces in string length
+Python program to print even length words in a string
+Python – Uppercase Half String
+Python program to capitalize the first and last character of each word in a string
+Python program to check if a string has at least one letter and one number
+Python | Program to accept the strings which contains all vowels
+Python | Count the Number of matching characters in a pair of string
+Python program to count number of vowels using sets in given string
+Python Program to remove all duplicates from a given string
+Python – Least Frequent Character in String
+Python | Maximum frequency character in String
+Python – Odd Frequency Characters
+Python – Specific Characters Frequency in String List
+Python | Frequency of numbers in String
+Python | Program to check if a string contains any special character
+Generating random strings until a given string is generated
+Find words which are greater than given length k
+Python program for removing i-th character from a string
+Python program to split and join a string
+Python | Check if a given string is binary string or not
+Python | Find all close matches of input string from a list
+Python program to find uncommon words from two Strings
+Python | Swap commas and dots in a String
+Python | Permutation of a given string using inbuilt function
+Python | Check for URL in a String
+Execute a String of Code in Python
+

@@ -1,0 +1,65 @@
+# Dropdown
+# - import Select
+# - inspect webelement  of select dropdown - ele = driver.find.element(By.ID,'')
+# select = Select(ele)
+# then u can access multiple methods of select
+# method 1 :
+# 1. select.select_by_visible_text('')
+# 2. select.select_by_index(5)
+# 3. select.select_by_value('')
+# 4. select.is_multiple() - it will tell you that dropdown is single select or multiselect -
+# it will return none if dropdown is not multiselect
+# 5. select.deselect_all() - to deselect options/value/index
+
+what if u have 100 dropdown:
+def select_value(element, value):
+    select = Select(element)
+    select.select_by_value(value)
+
+
+select = Select(ele)
+list = select.options
+for ele in list:
+    print(ele.text)
+    if (ele.text == 'Automotive')
+        ele.click()
+        break
+
+IQ - select dropdown without select class inspect webelements for select
+use for loop to extract options
+
+
+def select_values_from_dropdown(dropdowmoptionslist, value):
+    print(len(indus_options))
+    for ele in dropdowmoptionslist:
+        print(ele.text)
+        if ele.text == ' value'
+            ele.click()
+            break
+
+indus_options = driver.findelements(By.XPATH, ' ')
+select_values_from_dropdown(indus_options, 'Education')
+
+
+2) Jquery Dropdown - dropdown who is not having "select" tag like angular js,react or jquery
+
+
+3)
+
+
+
+# there are two types of wait
+static wait - time.sleep - wait for 5 sec if given 5 sec
+dynamic wait - we have given 10 sec time but element found in 5sec then rest of the time will be ignored.
+2 types of dynamic wait -> 1) implicit wait 2) explicit wait
+
+Implicit wait ->driver.implicitely_wait(10)
+default value is 10.
+dynamic in nature
+imw will be applied for all the web element available in the page
+global wait
+this wait will be applied whenever you user driver.element or driver.find_elements
+only for webelements
+drawback - >
+u can not apply it for url(like title of the page) or for non web element
+then u have to use explicitely wait

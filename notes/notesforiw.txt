@@ -1,0 +1,202 @@
+mobile automation
+robot framework
+jaascript
+aws
+ci/cd
+
+
+
+
+
+
+topics need to practise
+----------------------------------
+selenium---->
+webtable
+scroller
+selenes
+unittest
+
+request module
+
+python-generator,decorator,logging,file handling
+
+
+What is MRO in python
+Method Resolution order is used in inheritance concepts
+where class is inheriting multiple class and in all the parent class, same method is defined. Child class is confused which method to call during run time. So the MRO helps to resolve the issue.
+
+. What makes Selenium such a widely used testing tool? Give reasons.
+Selenium is simple to use because it was mostly created in JavaScript.
+Chrome, Firefox, Safari, and Opera are just a few of the web browsers Selenium can test web apps with.
+Several programming languages, including Java, Perl, Python, and PHP, can be used to create the test code.
+Selenium can be used on a variety of operating systems, including Windows, Linux, and Macintosh, as it is platform-independent.
+For test management, Selenium can be connected with external technologies like JUnit and TestNG.
+
+What is Selenese? How is it classified?
+The Selenium commands known as Selenese are used to test your web application. With Selenese, the tester can test broken links, the existence of certain UI objects, Ajax capabilities, notifications, windows, list choices, and much more.
+
+Action: Commands that communicate with the programme directly
+Accessors: Let the user to add specific values to a variable that they create.
+Assertions: Verifies the application's present state against an anticipated state.
+
+Stale Element-->
+You have to define the Stale Element Reference Exception first. Stale describes something that has aged, degraded, and lost its freshness. A stale element is one that is out of date or unavailable. Assume that a WebElement is found on a web page using WebDriver. When the DOM changes, the WebElement becomes outdated. When we attempt to interact with a stale element, the StaleElementReferenceException is raised.
+
+
+11. What is the same-origin policy and how is it handled?
+Same Origin policy is a feature adopted for security purposes. According to this policy, a web browser allows scripts from one webpage to access the contents of another webpage provided both the pages have the same origin. The origin refers to a combination of the URL scheme, hostname, and port number.
+
+The same Origin Policy prevents a malicious script on one page to access sensitive data on another webpage. 
+
+same-origin
+Consider a JavaScript program used by google.com. This test application can access all Google domain pages like google.com/login, google.com/mail, etc. However, it cannot access pages from other domains like yahoo.com 
+
+Selenium RC was introduced to address this. The server acts as a client configured HTTP proxy and "tricks" the browser into believing that Selenium Core and the web application being tested come from the same origin.
+
+What is an exception test in Selenium?
+The exception test in Selenium is an exception that you expect will be thrown inside a test class. If you have written a test case in such a way that it should be thrown as an exception, then you can use the test annotation and specify the exception in the parameters. 
+
+pom
+data driven
+keyword driven
+type" and "typeAndWait" command?
+Explain the methods used to handle dynamic web elements using Selenium?
+Dynamic web elements can be handled using different methods such as xpath, CSS selectors, and the Explicit wait mechanism in Selenium. You can use these methods to locate the dynamic elements and perform actions on them.
+
+85. How do you deal with stale element exceptions in Selenium?
+Stale element exceptions occur when the element you are interacting with is no longer attached to the DOM or has been modified. To handle this exception, you can refresh the page or try to locate the element again using a different locator strategy.
+
+Explain the methods used to handle dynamic web elements using Selenium?
+Dynamic web elements can be handled using different methods such as xpath, CSS selectors, and the Explicit wait mechanism in Selenium. You can use these methods to locate the dynamic elements and perform actions on them.
+
+85. How do you deal with stale element exceptions in Selenium?
+Stale element exceptions occur when the element you are interacting with is no longer attached to the DOM or has been modified. To handle this exception, you can refresh the page or try to locate the element again using a different locator strategy.
+
+Explain the methods used to handle dynamic web elements using Selenium?
+Dynamic web elements can be handled using different methods such as xpath, CSS selectors, and the Explicit wait mechanism in Selenium. You can use these methods to locate the dynamic elements and perform actions on them.
+
+why do u prefer python
+
+. Explain Selenium’s components in detail.
+Although labeled as an automation testing tool, Selenium isn’t a standalone tool. Instead, it is a package of several tools, and thus a testing suite. The Selenium suite has the following components:
+
+Selenium IDE: Distributed as a Firefox plugin, Selenium IDE serves as a record and playback tool
+Selenium Grid: Allows distributing test execution across multiple platforms and environments concurrently
+Selenium RC: A server that allows users to create test scripts in a desirable programming language. Selenium RC also permits executing test scripts across a diverse range of web browsers.
+Selenium WebDriver: Communicates directly with the web browser in addition to using its native compatibility to automate.
+
+ What is the role of assertion and what are the various types?
+The role of assertion is to act as a verification point. It helps verify the state of the application, ensuring that it conforms to expectations. There are three types:
+
+Assert
+Verify
+WaitFor
+
+What are the various types of Test Automation Frameworks?
+Behavior-Driven Development Framework: Allows automating functional validations in an easy-to-read and understandable format for different professionals, including analysts, developers, and testers.
+Data-Driven Testing Framework: Helps segregate the test script logic and the test data. It also allows storing test data in some external database in the form of key-value pairs. These keys are used for accessing as well as populating the data within the test scripts.
+Keyword-Driven Testing Framework: It is an extension to the data-driven testing framework in a way that in addition to separating test data from the test scripts, a keyword-driven testing framework stores a part of the test script code in an external data file.
+Library Architecture Testing Framework: Works on the principle of determining the right steps and then grouping them together into functions under a library. These functions are called in the test scripts whenever required.
+Module-Based Testing Framework: Divides each application under testing into a number of logical and isolated modules. A distinct test script is created for each module.
+Hybrid Testing Framework: Offers features belonging to different types of testing frameworks. The idea is to reap in all the benefits of various approaches with a single testing tool.
+
+What are the limitations of Selenium?
+Only supports web-based applications
+Bitmap comparison is not supported
+Third-party tools are required for reporting purposes
+Vendor support is minimal compared to other commercial tools like HP UFT
+Challenging to maintain objects in Selenium
+Does not offer testing for barcode and captcha readers
+
+ What is the difference between assert and verify in Selenium?
+Both assert and verify commands are responsible for checking whether the given condition is true or false. However, the main distinction between the two lies in what each of them does after the condition checking is complete.
+
+If the condition comes out to be false in the case of a verify command, then the execution stops and no further tests will be executed. However, if the condition is true then the program control will continue executing the next test step.
+
+The verify command, on the other hand, does not care about the result of the condition checking. Whether it is true or false, the program execution continues and all the test steps will be completed.
+
+
+ What are the parameters in Selenium?
+There are four parameters in Selenium which includes:
+
+Host
+URL
+Port Number
+Browser
+
+What are the various types of Drivers and Waits available in WebDriver?
+WebDriver provides support for the following drivers:
+
+AndroidDriver
+ChromeDriver
+FirefoxDriver
+HtmlUnitDriver
+InternetExplorerDriver
+IPhoneDriver
+OperaDriver
+SafariDriver
+
+What is the most important difference between the driver.close() and driver.quit() commands?
+The close() method closes the currently accessed window by the WebDriver. The command neither requires a parameter nor does it return any value.
+
+Unlike the close() method, the quit() method is used for closing down all the windows opened by the program. Like the close() command, the quit() method doesn’t require parameters or have any return values.
+
+There are many WebDriver Exceptions in Selenium. However, the most common ones are:
+
+NoSuchElementException
+ElementNotVisibleException
+SessionNotFoundException
+NoSuchFrameException
+NoAlertPresentException
+NoSuchWindowException
+StaleElementReferenceException
+
+What is the same-origin policy? How can we avoid it?
+This policy is introduced for security reasons.
+
+By this policy, it ensures that we cannot access the script from another site.
+The source code which is loaded within the browser can only be operated within that website’s domain.
+This policy can be avoided by using the proxy-injection method. In this method, the browser is tricked using the Selenium’s server to be a real URL (fictional URL).
+
+How can you debug the tests in the Selenium IDE?
+This is one of the most asked selenium interview questions
+
+We need to first insert the breakpoints where we need to debug and execute the test step by step. 
+Later, Run the test case.
+After this, the execution stops at the point where the breakpoint is kept.
+You can click on the Run button to continue the execution of all the commands sequentially.
+
+Can you automate CAPTCHA?
+The answer is No. We cannot automate CAPTCHA in Selenium. The concept of CAPTCHA is to ensure that the bots or automated test scripts should not have access to sensitive information, and that is why we cannot automate it. The captcha should be manually typed in order to continue the flow of execution of the test suite.
+
+ What are the challenges and Limitations of the Selenium Web Driver?
+As we all know that the Selenium Web Driver is used to mimic the real user actions on the web in the browser. Some of the challenges of Selenium are as follows,
+
+Not compatible to test the Windows or Desktop applications.
+Also, cannot be used to test Mobile applications.
+No Built-in reporting and it must be integrated with the other tools to obtain the reports.
+Support for Image Testing is limited.
+The user should have prior programming knowledge.
+Since it is open-source, there is no vendor support.
+
+Explain different types of Exceptions in the Selenium Web driver?
+The Exceptions in the Selenium web driver are also similar to the exceptions in any other programming language like Java, C#, etc., Some of the most common exceptions are as follows,
+
+TimeOutException: This exception can be thrown when a particular operation cannot be completed in a specified or stipulated time.
+NoSuchElementException: When an element in the given set of attributes is not present on the web page then, this exception can be thrown.
+ElementNotVisibleException: There can be cases where a particular element can be present in the DOM (Document Object Model) but not visible on the web page. In such cases, this exception can be thrown.
+StaleElementException: When an element is either deleted or no longer present in the DOM then, this exception can be thrown. We generally face this exception when the element we are interacting with is either destroyed or recreated again. 
+
+
+The implicit wait tells to the WebDriver to wait for certain amount of time before it throws an exception. Once we set the time, WebDriver will wait for the element based on the time we set before it throws an exception. The default setting is 0 (zero). We need to set some wait time to make WebDriver to wait for the required time.
+
+Note: Implicit Wait is in place for the entire time the browser is open. Time taken to search all the elements are based on the time fixed for the implicit wait.
+
+Syntax:
+
+driver.manage().timeouts().implicitlyWait(TimeOut, TimeUnit.SECONDS);
+
+
+
+

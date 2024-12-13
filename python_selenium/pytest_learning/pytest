@@ -1,0 +1,196 @@
+PYTEST TOPIC -
+----------------
+basics
+parallel
+parameterized
+fixtures
+conftest
+html reports
+--------------------
+
+cmd to install library -
+pip install pytest
+
+import pytest
+
+
+cmd for run -> py.test -> it will check all file start with "test" it will run all program start with "test"
+so cmd to test perticular file "py.test filename.py "
+cmd to run perticular file having specific keyword -> py.test -k login -v
+-k -> represent keyword identifier
+-v -> represent more verbose
+------------------------------------------------------------
+Topic2 - execution in parallel mode with the help of marker
+ function ke upar likhna hoga -> @pytest.mark.login
+
+py.test -m login -> sabhi file me jaha login marker hoga vo run hoga
+py.test -n 4 -m login -> it will run parallely
+
+-m -> represent marker name
+
+agar particular file ka run krna hai to cmd -> py.test pkgName/FileName.py -m login
+
+
+To Run yor test in parallel mode
+- install pkg -> pip install pytest-xdist
+- cmd -. py.test -n 4
+- cmd -> py.test pkgName/fileName.py -n 4
+4 browsers will run on same time
+
+PyTest Fixtures
+we use fixture as set up and tear down method
+used when if we have any prerequisite
+define fixtures-->
+how to represent fixture - can use annotation above fixture method as @pytest.fixture(scope = 'module')
+- we can also pass parameter to the fixture like browser - chrome,firefox - as per condition it will execute code for both parameter
+
+how to use fixture -
+method1 - to use fixture in code we have to pass fixture name in parameter to method - def login("init_driver") - then
+automatically init driver fixture will run after call this function.
+method2 - can use annotation above method as @pytest.mark.usefixtures("init_driver")
+
+cmd to execute - pytest test_google_fixture.py -v -s --html=test_doc.html
+
+-v -> we use whe we want more verbose or more detail information
+-s -> we use when we want to show print statement
+-------------------------------------------------------
+how to define scope for fixtures -
+-----------------------------------
+how to pass parameter- @pytest.fixture(params=['chrome','firefox'],scope='class)
+------------------------------------
+Conftest.py - configuration file
+-> maintain one configuration file at global level
+-> it is use in throughout the test classes
+-> create python file with name "conftest.py"
+-> @pytest.fixture -> whatever the function will return it can acccess by any test method
+-> it is behave like fixture global precondition for all the test classes
+
+
+Parameterization
+
+-------------------------------------------------------------------------
+pytest notes - sdet-
+
+The pytest framework makes it easy to write small tests implemented on top of unittest
+import pytest
+
+
+
+"""
+pip install pytest
+pytest --version
+how to run - pytest
+pytest file name always start with -"test"
+also tesmethod always start with "test"
+-v -> verbose
+-s -> it will print print statement
+
+"""
+def testMethod1():
+    print("test1")
+
+def testMethod2():
+    print("test2")
+ ------------------------------------------------------------------
+ import pytest
+
+# execute methods multiple times
+@pytest.fixture()
+def setup():
+    print("once before every method")
+def testmathod(setup):
+    print("test1")
+
+def testmethod2(setup):
+    print("method2")
+
+-----------------------------------------------------------------
+import pytest
+"""
+fixture -> execute before test method
+yieldd - execute after test method
+"""
+
+@pytest.fixture()
+def setup():
+    print("before test")
+    yield
+    print("after test")
+
+def test1(setup):
+    print("test")
+
+def test2(setup):
+    print("test2")
+
+how to execute-
+
+
+--------------------------------------------------------------------
+
+pytest topics-
+pytest
+parallel test
+pytest fixtures
+conftest
+parameterization
+Assertions
+-----------------------------------------
+
+Pytest feature :
+1) it is open source
+
+install - pytest
+
+name of method -
+start with test or end with test
+
+name of python file -
+start with test
+end with test
+
+-k - run test on keyword basis
+if some test is named as login_ab,login_ck
+cmd - py.test -k login -v
+execute all test include/contains name as login
+
+cmd -> py.test -> will go to currrent folder and will test all files which name start with "test"
+
+
+
+
+
+
+2) if you run with "py.test" command then it will run all function of that pkg who is start with "test"
+3) execution file command - "py.test test_demo.py" , "py.test dir_path"
+py.test ->this command will execute all the file - if you want to execute particular function then execute
+ cmd -> py.test foldername/filename.py
+4) command for running particular function by the given keyword - "py.test -k login -v"
+
+
+Run test in group :
+1) can create no of markers then execute based on marker also can do parallel execution
+2) @pytest.mark.login - if we define this in above function then all fun with "login" marker it will execute by running command
+cmd - py.test -m login
+-m -> marker for login
+
+ execute code parallel mode -
+ install package - pip xdist
+
+
+conftest file :
+1) will have to save with file name as "conftest"
+
+
+
+
+
+Fixtures :
+The purpose of test fixtures is to provide a fixed baseline upon which tests can reliably and repeatedly execute.
+
+
+@pytest.fixture() :
+    - Execute specific method before every test method
+@pytest.yield_fixture():
+    - Execute specific method before and after test method
+

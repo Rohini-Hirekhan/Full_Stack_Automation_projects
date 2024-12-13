@@ -1,0 +1,138 @@
+Important functions of set:
+1. add(x):
+Adds item x to the set
+Eg:
+1. s={10,20,30}
+2. s.add(40);
+3. print(s) #{40, 10, 20, 30}
+2. update(x,y,z):
+To add multiple items to the set.
+Arguments are not individual elements and these are Iterable objects like List,range etc.
+All elements present in the given Iterable objects will be added to the set.
+Eg:
+1. s={10,20,30}
+2. l=[40,50,60,10]
+3. s.update(l,range(5))
+4. print(s)
+
+5.
+6. Output
+7. {0, 1, 2, 3, 4, 40, 10, 50, 20, 60, 30}
+Q. What is the difference between add() and update() functions in set?
+We can use add() to add individual item to the Set,where as we can use update() function
+to add multiple items to Set.
+add() function can take only one argument where as update() function can take any
+number of arguments but all arguments should be iterable objects.
+Q. Which of the following are valid for set s?
+1. s.add(10)
+2. s.add(10,20,30) TypeError: add() takes exactly one argument (3 given)
+3. s.update(10) TypeError: 'int' object is not iterable
+4. s.update(range(1,10,2),range(0,10,2))
+3. copy():
+Returns copy of the set.
+It is cloned object.
+s={10,20,30}
+s1=s.copy()
+print(s1)
+
+4. pop():
+It removes and returns some random element from the set.
+Eg:
+1. s={40,10,30,20}
+2. print(s)
+3. print(s.pop())
+4. print(s)
+5.
+6. Output
+7. {40, 10, 20, 30}
+8. 40
+9. {10, 20, 30}
+
+5. remove(x):
+It removes specified element from the set.
+If the specified element not present in the Set then we will get KeyError
+s={40,10,30,20}
+s.remove(30)
+print(s) # {40, 10, 20}
+s.remove(50) ==>KeyError: 50
+6. discard(x):
+It removes the specified element from the set.
+If the specified element not present in the set then we won't get any error.
+s={10,20,30}
+s.discard(10)
+print(s) ===>{20, 30}
+s.discard(50)
+print(s) ==>{20, 30}
+Q. What is the difference between remove() and discard() functions in Set?
+Q. Explain differences between pop(),remove() and discard() functionsin Set?
+
+7.clear():
+To remove all elements from the Set.
+1. s={10,20,30}
+2. print(s)
+3. s.clear()
+4. print(s)
+5.
+6. Output
+7. {10, 20, 30}
+8. set()
+
+Mathematical operations on the Set:
+1.union():
+x.union(y) ==>We can use this function to return all elements present in both sets
+x.union(y) or x|y
+Eg:
+x={10,20,30,40}
+y={30,40,50,60}
+print(x.union(y)) #{10, 20, 30, 40, 50, 60}
+print(x|y) #{10, 20, 30, 40, 50, 60}
+2. intersection():
+x.intersection(y) or x&y
+Returns common elements present in both x and y
+Eg:
+x={10,20,30,40}
+y={30,40,50,60}
+print(x.intersection(y)) #{40, 30}
+print(x&y) #{40, 30}
+3. difference():
+x.difference(y) or x-y
+returns the elements present in x but not in y
+Eg:
+x={10,20,30,40}
+y={30,40,50,60}
+print(x.difference(y)) #{10, 20}
+print(x-y) #{10, 20}
+print(y-x) #{50, 60}
+
+
+
+4.symmetric_difference():
+x.symmetric_difference(y) or x^y
+Returns elements present in either x or y but not in both
+Eg:
+x={10,20,30,40}
+y={30,40,50,60}
+print(x.symmetric_difference(y)) #{10, 50, 20, 60}
+print(x^y) #{10, 50, 20, 60}
+Membership operators: (in , not in)
+Eg:
+1. s=set("durga")
+2. print(s)
+3. print('d' in s)
+4. print('z' in s)
+5.
+6. Output
+7. {'u', 'g', 'r', 'd', 'a'}
+8. True
+9. False
+Set Comprehension:
+Set comprehension is possible.
+s={x*x for x in range(5)}
+print(s) #{0, 1, 4, 9, 16}
+s={2**x for x in range(2,10,2)}
+print(s) #{16, 256, 64, 4}
+set objects won't support indexing and slicing:
+Eg:
+s={10,20,30,40}
+print(s[0]) ==>TypeError: 'set' object does not support indexing
+print(s[1:3]) ==>TypeError: 'set' object is not subscriptable

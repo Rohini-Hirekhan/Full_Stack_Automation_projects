@@ -1,0 +1,124 @@
+Selenium Webdriver -
+Locators-
+ID = "id"
+NAME = "name"
+XPATH = "xpath"
+LINK_TEXT = "link text"
+PARTIAL_LINK_TEXT = "partial link text"
+TAG_NAME = "tag name"
+CLASS_NAME = "class name"
+CSS_SELECTOR = "css selector"
+
+webdrver -
+it is one of the componente in selenium
+it is a module
+
+-----
+----------------------------------------------
+by naveen -
+set webdriver
+chrome 116.x
+1. set the system property : download chromedriver.exe from CFT dashboard/URL
+   System.setProperty("webdriver.chromedriver",/Users/")
+
+2. Bonigarcia - WebDrivermanager(WDM)
+    it will automatically download chromedriver.exe from CFT dashboard/URL
+
+3. selenium 4.11.0 : do we need WDM?
+    selenium manager -> you dont need WDM
+    SM -> it will automatically download chromedriver.exe from CFT dashboard/URL
+
+    WebDriver driver = new ChromeDriver()://116-116.exe
+
+    Selenium 4.x ------------> less than selenium 4.11.0
+    project < 4.6.0 ---------> 4.5.0 (WDM 5.5.2)
+    selenium 4.6.0 -----------> Selenium Manager
+    automatically download chromedriver.exe 116.exe from CFT dashboard Endpoints
+
+command to show selenium details -
+pip show selenium
+
+firefox browser ------------> Firefox()
+Chrome Browser -------------> Chrome()
+Edge------------------------> Edge()
+
+webdriver is an API (Application programming Interface)
+
+
+Architecture of Webdriver -
+
+ selenium 3
+
+ selenium language bindings ---> json wire protocol ---> Browser drivers ------w3c -----> Browsers
+
+ selenium 4
+
+ selenium language bindings ---> w3c ---> Browser drivers ------w3c -----> Browsers
+----------------------------------------
+Setup and configuration webdriver in pycharm
+---------------------------------------
+prerequisite
+-python
+-pycharm
+
+1) download browser specific drivers using below links :
+ chrome : https://chromedriver.chromium.org/downloads
+ edge : https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+ firefox : https://github.com/mozilla/geckodriver/releases
+
+ once you download extract .zip files then you will see .exe files (they are drivers)
+
+ 2) setup selenium webdriver
+
+ approach 1 : pip install selenium==4.0.0.b4
+              pip install selenium
+ approach 2: or through pycharm project settings
+
+
+ webdriver is a module which is available in selenium package
+
+
+
+
+
+ Locators -
+ following locator mostly use to find single webelement
+ -id
+ -name
+ -linktext
+ -partiallinktext
+
+ following locator mostly use to find more than one webelement
+ -classname
+ -tagname
+
+
+ css seelctor and xpath are customizes locator
+
+ css selector ->
+ -Tag and ID  -> tag#id or tagname#valueofid or #id
+ -Tag and Class  -> tag.class or .classname
+ -Tag and attribute -> tag[attribute=value]
+ -Tag, class and attribute (use when tag and class name are same) -> tag.valueofclass[attribute=value]
+
+ XPath ->
+ It is a syntax or language for finding any element on the web page using XML path expression
+ It is used to find the location of any elements and attributes in DOM structure
+ XPATH can be used to navigate through elements and attributes in DOM
+ XPath is an address of the element
+
+ DOM - Document Object Model
+ - DOM is an API Interface provided by browser
+ - When a web page is loaded, the browser creates a Document Object Model of the page.
+ - xpath works on dom structure
+ Two tyes of XPath
+ -Absolute/Full XPath
+ -Relative/Partial XPath
+
+ HTML -
+
+
+diff bet close and quit?
+close - close single browser
+quit -  close all the browser
+

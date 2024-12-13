@@ -1,0 +1,179 @@
+Git workflow - naveen
+remote repo -> created on git cloud
+working copy -> stage -> local -> remote
+
+Git Branching ->
+1st step -> clone whole project
+step 2 -> then checkout the branch to working copy
+step3 ->
+wc->stage = git add
+stage -> local = git commit
+local -> remote = push
+after PR (pull request) approved -> merge code from remote(feature branch) to master
+
+code will move branch to branch
+main branch is master branchh which is stable branch
+
+fetch -> fetch code from remote to local branch(not reflecting to working directory)
+pull -> pulling directly code from remote repo to working directory
+
+local -> wd = git merge
+fetch + merge = pull
+
+
+How to raise PR ->
+push code from local branch to remote branch  then raise PR after approval merge code to master
+merge with PR
+
+
+how to create or checkout branch?
+developer cutting branch from master and start working on it feature branch
+-> pull code from master - create branch in local - then merge in master after PR
+
+
+
+
+
+
+
+
+
+SDET -
+Git -> version control software by which we can have our code in common place(It is local repository)
+Git is version control system used to track changes in computer files. it is a tool to manage your code and file history while
+ coordinating work remotely on those files with others.
+
+
+Github -> (it is a remote repository)
+
+
+Github notes from SDET videos :
+
+step 1 - team lead will create project in eclipse
+wd (cmd->add)-> staging(command->commit) -> local (cmd->push)-> remote
+remote to local -> fetch
+remote to wd -> pull
+local to wd -> checkout
+--------------------------------------------------------------------
+add your project to local repo in eclipse ->
+steps1 : right click on project-> team -> share project(one pop up will open ) -> create repo
+step 2 : now add project in local repo - right click on project -> team -> add to index(to add in stage) - right click -team
+->commit-> add files thorugh pop up ->
+
+push project in remote repo
+- right clicik on project - team - remote - push
+
+
+
+Git notes from SDET -
+
+why version control system (VCS)-
+- to maintain version
+- to tracking all the files
+- share the files between multiple teams
+
+two types of VCS -
+1) centralized VCS - sever me load badh jayega if user increased
+
+
+
+
+server me bheje data me kuch modify krna hai to we need to do "checkout"
+2) distributed control system
+
+workspce(wc) to local repo -> commit
+local to wc -> checkout
+local repo to remote repo -> push
+remote repo  to local repo -> pull
+
+ls - display all files/directory
+pwd - current working directory
+git --version
+
+
+practical -
+ 1) git init
+ - initialized empty/new git repository in same folder
+ - named as ".git" here dot represent hidden file
+
+ 2) git status
+ -it shows status of files which are availble in your WS
+ - untracked files
+
+ 3) git add
+ - add files from WS to staging/index area
+ --> git add -a
+ - add all the files
+ --> git add a.txt b.txt
+ - add specific files
+ --> git add .*
+
+ 4) git commit
+ - move code from stage to local
+ but before this we need to execute some configuration command to tell that which user is going to do this activity this has to be done only one time
+ --> git config --global user.email "rohini3.h@yopmail.com"
+ global represent that user name will be applicable for all the git repository
+ --> git config --global user.name "rohini"
+ --> git commit -m "comment should be here"
+
+ 5) git log
+ - for every commit it will create log with detail information
+----------------------------------------------------------------------------------------------------------------
+
+
+step1- create local repo
+    1) git init - initialised empty repository
+       #Initialized empty Git repository in C:/Learning/myproject/.git/
+    2) git status - show status of files which are available in workspace - all files available under track
+        On branch master
+
+        No commits yet
+
+        Untracked files:
+            (use "git add <file>..." to include in what will be committed)
+                a.txt.txt
+                b.txt.txt
+
+        nothing added to commit but untracked files present (use "git add" to track)
+
+step2 - add files in staging area
+    git add -a -> add all files to staging area
+    git add a.txt b.txt -> add specific files in staging area
+    git add .* -> add all extension files in staging area
+    $ git status
+        On branch master
+
+        No commits yet
+
+            Changes to be committed:
+            (use "git rm --cached <file>..." to unstage)
+            new file:   a.txt
+            new file:   b.txt
+
+step3 - move file to local repo
+    before this need to do some configuration like which user is doing this that need to be specify(for first commit in ur project)
+    configuration cmd -> git config --global user.email ""
+                      ->  git config --global user.name ""
+
+    -> git commit -m "must provide comment here"
+    -> git status
+    -> git log #how many commit done earlier
+
+   -> modify files - git sttus -
+   git commit -a -m "" #cmd for add and commit for tracked files
+   b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

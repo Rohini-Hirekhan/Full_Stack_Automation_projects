@@ -1,0 +1,19 @@
+automate test cases -
+ - login to bugdazz through yopmail
+ steps-1)enter email
+       2)clcik on login
+       3)navigate url to - yopmail
+       4)enter email and click enter
+       5)switch to frame - click on login button
+ - automate add ticket module -
+ PAGE1 - STEP1
+ steps-1)click on dropdown
+       2)add ticket - link
+       3)select program - dropdown - select input from list or write
+       4)finding titile - text -
+       5)vulnerable asset - text + dropdown -
+       6)affect module - text + dropdown -
+       7)next page - button
+
+   we will get actual result from Loginpages and we store expexted result in testdata
+

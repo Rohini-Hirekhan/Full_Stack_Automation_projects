@@ -1,0 +1,29 @@
+1694714593333	geckodriver	INFO	Listening on 127.0.0.1:58544
+1694714596416	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58545" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofilef2pyeJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694714597928	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694714598318	Marionette	INFO	Listening on port 58555
+WebDriver BiDi listening on ws://127.0.0.1:58545
+Read port: 58555
+1694714598705	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58545/devtools/browser/4547abc8-9f56-4295-9cf8-cb4ca2135fb4
+JavaScript error: , line 0: NotFoundError: Could not move source file(C:\Users\HP\AppData\Local\Temp\rust_mozprofilef2pyeJ\bookmarkbackups\bookmarks-2023-09-14.jsonlz4) because it does not exist
+1694744180031	Marionette	INFO	Stopped listening on port 58555
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+console.error: (new Error("Data is not ready.", "resource://gre/modules/JSONFile.sys.mjs", 178))
+1694755114739	geckodriver	INFO	Listening on 127.0.0.1:49990
+1694755117886	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49991" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofileAfkSvd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694755119318	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694755119524	Marionette	INFO	Listening on port 50002
+WebDriver BiDi listening on ws://127.0.0.1:49991
+Read port: 50002
+1694755119938	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49991/devtools/browser/183f7586-64a5-45e3-8c1e-f9f071bd43d4
+1694776609770	Marionette	INFO	Stopped listening on port 50002
+Dynamically enable window occlusion 1

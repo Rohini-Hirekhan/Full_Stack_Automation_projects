@@ -1,0 +1,1120 @@
+selenium
+locator
+text field
+checkbox
+button
+wait
+jquery,dropdown
+popup
+mouse movement
+drag and drop
+frames
+screenshot
+browser window
+webtable
+data driven
+
+
+
+
+Selenium Webdriver -
+Locators-
+ID = "id"
+NAME = "name"
+TAG_NAME = "tag name"
+CLASS_NAME = "class name"
+LINK_TEXT = "link text"
+PARTIAL_LINK_TEXT = "partial link text"
+XPATH = "xpath"
+CSS_SELECTOR = "css selector"
+
+webdrver -
+it is one of the componente in selenium
+it is a module
+
+-----
+----------------------------------------------
+by naveen -
+set webdriver
+chrome 116.x
+1. set the system property : download chromedriver.exe from CFT dashboard/URL
+   System.setProperty("webdriver.chromedriver",/Users/")
+
+2. Bonigarcia - WebDrivermanager(WDM)
+    it will automatically download chromedriver.exe from CFT dashboard/URL
+
+3. selenium 4.11.0 : do we need WDM?
+    selenium manager -> you dont need WDM
+    SM -> it will automatically download chromedriver.exe from CFT dashboard/URL
+
+    WebDriver driver = new ChromeDriver()://116-116.exe
+
+    Selenium 4.x ------------> less than selenium 4.11.0
+    project < 4.6.0 ---------> 4.5.0 (WDM 5.5.2)
+    selenium 4.6.0 -----------> Selenium Manager
+    automatically download chromedriver.exe 116.exe from CFT dashboard Endpoints
+
+command to show selenium details -
+pip show selenium
+
+firefox browser ------------> Firefox()
+Chrome Browser -------------> Chrome()
+Edge------------------------> Edge()
+
+webdriver is an API (Application programming Interface)
+
+
+Architecture of Webdriver -
+
+ selenium 3
+
+ selenium language bindings ---> json wire protocol ---> Browser drivers ------w3c -----> Browsers
+
+ selenium 4
+
+ selenium language bindings ---> w3c ---> Browser drivers ------w3c -----> Browsers
+----------------------------------------
+Setup and configuration webdriver in pycharm
+---------------------------------------
+prerequisite
+-python
+-pycharm
+
+1) download browser specific drivers using below links :
+ chrome : https://chromedriver.chromium.org/downloads
+ edge : https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+ firefox : https://github.com/mozilla/geckodriver/releases
+
+ once you download extract .zip files then you will see .exe files (they are drivers)
+
+ 2) setup selenium webdriver
+
+ approach 1 : pip install selenium==4.0.0.b4
+              pip install selenium
+ approach 2: or through pycharm project settings
+
+
+ webdriver is a module which is available in selenium package
+
+
+
+
+
+ Locators -
+ following locator mostly use to find single webelement
+ -id
+ -name
+ -linktext
+ -partiallinktext
+
+ following locator mostly use to find more than one webelement
+ -classname
+ -tagname
+
+
+ css seelctor and xpath are customizes locator
+
+ css selector ->
+ -Tag and ID  -> tag#id or tagname#valueofid or #id
+ -Tag and Class  -> tag.class or .classname
+ -Tag and attribute -> tag[attribute=value]
+ -Tag, class and attribute (use when tag and class name are same) -> tag.valueofclass[attribute=value]
+
+ XPath ->
+ It is a syntax or language for finding any element on the web page using XML path expression
+ It is used to find the location of any elements and attributes in DOM structure
+ XPATH can be used to navigate through elements and attributes in DOM
+ XPath is an address of the element
+
+ DOM - Document Object Model
+ - DOM is an API Interface provided by browser
+ - When a web page is loaded, the browser creates a Document Object Model of the page.
+ - xpath works on dom structure
+ Two types of XPath
+ -Absolute/Full XPath
+ -Relative/Partial XPath
+
+ HTML -
+
+
+diff bet close and quit?
+close - close single browser
+quit -  close all the browser
+------------------------------------------------------------------
+22nd may 24 - python with selenium - sdet -
+1) application commands
+2) conditional commands
+3) browser commands
+4) navigational commands
+5) wait commands
+
+1) application commands -
+- title
+- current url
+- page_Source
+
+import time
+
+from selenium import webdriver
+from selenium.webdriver.common.selenium_manager import SeleniumManager
+
+driver = webdriver.Chrome()
+# 1) application commands -
+# ---------------------------------
+# - get - openeing the application URL
+# - title - to capture the title of the current page
+# - current url - to capture the current url of the web page
+# - page_Source - to capture source code of the page
+#
+# driver.get("https://opensource-demo.orangehrmlive.com/")
+# print(driver.title) #OrangeHRM
+# print(driver.current_url) #https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+# print(driver.page_source)
+
+# 2)conditional commands
+# ------------------------
+# following method can be access through only web element
+# is_displayed() - check perticular web element is present on web page or not
+# - if element id displayed return true or displayed false
+# is_enabled() - check if radio button is enabled or not (return true or false)
+# is_selected() - check if checkbox is selected or not (return true or false)
+
+# driver.get("https://demo.nopcommerce.com/register")
+# searchbox = driver.find_element("xpath","/html/body/div[6]/div[1]/div[2]/div[2]/form/input")
+# print("displayed status : ",searchbox.is_displayed()) #displayed status :  True
+# print("displayed status : ",searchbox.is_enabled()) #displayed status :  True
+# rd_male = driver.find_element("id","gender-male")
+# rd_female = driver.find_element("id","gender-female")
+# print("default selecting radio button")
+# print(rd_male.is_selected())#False
+# print(rd_female.is_selected()) #False
+# rd_male.click()
+# print("after selecting radio button")
+# print(rd_male.is_selected())#True
+# print(rd_female.is_selected()) #False
+
+# 3) browser commands
+# - close - 1) close single browser window (where driver should focused)but internally process is running(can close single browser at a time)
+# - quit() - 1) close all browser along with browser(it will close all browser and will kill the process)
+# driver.get("https://opensource-demo.orangehrmlive.com/")
+# driver.maximize_window()
+# driver.implicitly_wait(300)
+# driver.find_element("link text","OrangeHRM, Inc").click()
+# # driver.find_element("xpath","/html/body/div/div[1]/div/div[1]/div/div[2]/div[3]/div[2]/p[2]/a").click()
+# # driver.find_element("partial link text","OrangeHRM, I").click()
+# driver.implicitly_wait(100)
+# # driver.find_element("xpath","/html/body/div/div[1]/div/div[1]/div/div[2]/div[3]/div[2]/p[1]").click()
+# driver.implicitly_wait(300)
+# driver.close()
+# # //*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[3]/div[2]/p[2]/a
+
+# 4) navigational command - directly access through driver instance
+# - back()
+# - forward()
+# - refresh()
+# driver.get("https://www.snapdeal.com")
+# driver.get("http://www.amazon.com")
+# driver.back()
+# driver.forward()
+# driver.refresh()
+
+# find_element
+# find_elements
+# text vs get_attribute()
+# text - returns inner text of the element
+# get_attribute() - returns values of any attribute of web element
+
+
+# 5) wait commands - to solve synchronization problem we use wait statements
+# sometimes scripts run faster than application so application is not sync with scripts
+# 1) implicit wait
+# 2) explicit wait
+# time.sleep()-
+# adv -
+# 1)simple to use
+# disadvantage -
+# it took maximum ime out for all elements
+# 1) performance of the script is very poor
+# 2) if the element is not available within the time metioned,still there is chance of getting exception
+# implicit wait-
+# adv-
+# 1) single statement
+# 2) performance will not be reduced(if the element is available within the time it proceed to execute further statements)
+# disadv-if the element is not available within the time metioned,still there is chance of getting exception
+# 1)
+# it will applicable for all element which is present from bottom of implicit wait
+# so specify it beginning of the script after driver is created.
+# it will not wait for maximum time out if element is got in 5 sec then it will not wait for 5sec
+# so performance issue will not be there
+# one implicit wait handling synchronization problem for throughout the script
+# default time is 0 secrets
+# application must be loaded in 10sec if not then report performance bug
+
+3) explicit wait
+it worked based on the condition not based on the time
+for condition we need element
+to use this we need to define predefine class named as "WebDriverWait"
+WebDriverWait - it will take 2 arguments
+1) driver instance
+2) maximum time out but this is not time
+- explicit wait declaration -> obj = WebDriverWait(driver,10)
+- all condition can be used through this "obj" only
+- when we use explicit wait then no need to use find element method
+usage of explicit wait - element = obj.until(EC.presence_of_element_located(("xpath","")
+until method is wait until that condition becomes true means if condition is present
+if condition is satisfied it will return element
+all the condition will be displayed through EC object
+que - if element is not present? - if condition will not satisfy(if element is not on the webpage) so it will wait until given time
+then quit or come out from that and execute next statement
+que - it worked o codition then why we specify time? -
+if element not found it will throw exception so we can add new parameter to webdriverwait
+obj = WebDriverWait(driver,10,poll_frequency=2,ignored_exception = [NoSuchElemetException,ElementNotVisibleException,Excetion])
+disadv -
+1) multiple places - written for every element
+2) feel some difficulty
+poll_frequency - it will find element in given time period
+poll_frequency should be less than total time.
+-------------------------------------------------------------------------------
+checkbox-
+driver= webdriver.Chrome()
+driver.get("https://itera-qa.azurewebsites.net/home/automation")
+#find element and perform action
+#multiple element - create such type of xpath
+# #select multiple checkboxes by choice
+click() # if it is click then it will unclick
+
+
+# Links -
+1) internal - navigate to same page
+2) external - navigate to different page
+3) broken links
+
+----------------------------------------------------
+broken links
+import requests
+from selenium.webdriver.common.selenium_manager import SeleniumManager
+from selenium import webdriver
+driver = webdriver.Chrome()
+driver.get("http://www.deadlinkcity.com/")
+'''
+broken links - which doesnt have any target page
+>400 -> represent broken link
+
+capture all link from webpage
+read aall link
+display in console
+capture using href
+-install request package
+'''
+alllinks=driver.find_elements("tag name","a")
+count=0
+for link in alllinks:
+    url=link.get_attribute('href')
+    try:
+        res=requests.head(url)
+    except:
+        None
+    if res.status_code >= 400:
+        print(url, " is broken link")
+        count+=1
+    else:
+        print(url,"valid link")
+
+print("total number of broken links : ",count)
+
+-----------------------------------------------------------------------------------------------
+links:
+from selenium.webdriver.common.selenium_manager import SeleniumManager
+from selenium import webdriver
+
+
+driver= webdriver.Chrome()
+driver.get("https://itera-qa.azurewebsites.net/home/automation")
+
+"""
+# Links -
+1) internal - navigate to same page
+2) external - navigate to different page
+3) broken links
+
+"""
+------------------------------------------------------------------------------------------------------------
+checkbox -
+from selenium.webdriver.common.selenium_manager import SeleniumManager
+from selenium import webdriver
+driver= webdriver.Chrome()
+driver.get("https://itera-qa.azurewebsites.net/home/automation")
+
+'''
+find element and perform action
+multiple element - create such type of xpath
+#select multiple checkboxes by choice
+click() # if it is click then it will unclick
+'''
+-------------------------------------------------------------------------------------------------
+frames
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+
+"""
+frames(windows)/iframes(web aap)-
+if any element is in frame then we have to switch to frame
+
+selenium4 -
+switch_to.frame("name of the frame")
+switch_to.frame(id of the frame)
+switch_to.frame(webelement)
+switch_to.frame(0)
+
+html name -
+frame
+iframe
+form
+
+if we switch to one frame then if we want to switch to 2nd frame then we have to
+use - driver.switch_to.default_content() - go back to main page
+
+inner frames -
+outerframe ka webelement nikala ek variable me save kya
+driver.switch_to.frame(outerframe)
+innerframe =driver.findelement()
+driver.switch_to.frame(innerframe)
+driver.findelement().sendkeys()
+driver.switch_to.parent_frame() #directly switch to parent frame(outer frame)
+
+how to switch between browser window -
+ccurrent_window_handle ----> return windowID of single browser window
+window_handles ------------> return window ID's of multiple browser windows
+
+
+driver.switch_to.window(windowID)
+
+
+"""
+
+driver.get("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html")
+
+driver.find_element("link text","org.openqa.selenium").click()
+
+-------------------------------------------------------------------------------------------
+Alert -
+
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+"""
+
+alert is not an webelement is a special type of object
+how to handle alert -
+alertwindow = driver.switch_to.alert - handle alert by using - switch to alert window
+alertwindow.text - return text of the alert window
+alertwindow.send_keys("welcome") - enter value to field on alert pop up
+alertwindow.accept() - close aalert window by using OK button
+alertwindow.dismiss() - close alert window by using cance button
+
+Authentication pop up- where asked for username and password
+we can handle this situation by bypass(inject username and password in the url)
+http://the-internet.herokuapp.com/basic_auth
+syntax : http://username:password@test.com
+example - http://admin:admin@the-internet.herokuapp.com/basic_auth
+
+"""
+driver.get("https://the-internet.herokuapp.com/javascript_alerts")
+#open alert window
+driver.find_element("xpath","//button[normalize-space()='Click for JS Prompt']").click()
+alertwindow = driver.switch_to.alert
+print(alertwindow.text)
+alertwindow.send_keys("welcome")
+# alertwindow.accept() #close aalert window by using OK button
+alertwindow.dismiss() # close alert window by using cance button
+
+
+#Java Script Pop up Alert
+driver.get("https://www.google.com")
+alert = driver.switch_to_alert
+print(alert.text)
+alert.accept() #accept it , click on OK
+alert.dismiss()#cancel the pop up
+alert.send_keys("hi")
+
+driver.switch_to_default_content()#come back to driver
+
+--------------------------------------------------------------------------------------------
+Authenticated pop up -
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+
+"""
+Authentication pop up- where asked for username and password
+we can handle this situation by bypass(inject username and password in the url)
+http://the-internet.herokuapp.com/basic_auth
+syntax : http://username:password@test.com
+example - http://admin:admin@the-internet.herokuapp.com/basic_auth
+
+"""
+
+# driver.get("http://the-internet.herokuapp.com/basic_auth")
+driver.get("http://admin:admin@the-internet.herokuapp.com/basic_auth")
+#by using sendkeys only enter value in one field what about password field so do bypass
+# inject username and pass and bypass
+---------------------------------------------------------------------------------------------------
+
+dropdown handler -
+
+from selenium.webdriver.common.selenium_manager import SeleniumManager
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+driver.get("https://www.opencart.com/index.php?route=account/register")
+driver.maximize_window()
+driver.implicitly_wait(20)
+drp_con=Select(driver.find_element("xpath","//select[@id='input-country']"))
+#select is predefined class it will return select class object
+drp_con.select_by_visible_text("India")
+
+'''
+select option from the dropdown
+obj.select_by_visible_text('India")
+obj.select_by_value("10) - here given value of value attribute
+obj.select_by_index(13) - index will not shown on web page we will have to count this
+
+
+capture all the options and print them
+alloptions = obj.options
+for i in alloptions:
+    print(i.text())
+
+'''
+#capture all the options and print
+alloption - drp_con.options #return all the option
+print(len(alloption))
+
+for i in alloption:
+    print(i.text())
+
+#select option from dropdown without using buit-in method
+for i in alloptions:
+    if i.text=="India":
+        opt.click()
+        break
+
+-------------------------------------------------------------------------------
+HAndle browser window -
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+
+"""
+how to switch between browser window -
+ccurrent_window_handle ----> return windowID of single browser window
+window_handles ------------> return window ID's of multiple browser windows
+
+
+driver.switch_to.window(windowID)
+"""
+#
+# driver.get("https://www.opencart.com/")
+#
+# windowid = driver.current_window_handle
+# print(windowid) #D8E6D7B8198DEF663548D715CABA49C4
+# driver.get("https://www.opencart.com/")
+# #everytime we will get different window id
+# windowid = driver.current_window_handle
+# print(windowid) #3EC52621877317FA02B2E10A51962EB3
+
+driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+driver.find_element("xpath","//a[normalize-space()='OrangeHRM, Inc']").click()
+windowIDs=driver.window_handles # we will get list
+parentwindowid = windowIDs[0]
+childwindowid = windowIDs[1]
+print(parentwindowid,childwindowid)
+driver.switch_to.window(childwindowid)
+print("title of the child window" ,driver.title)
+driver.switch_to.window(parentwindowid)
+print("title of the parent window" , driver.title)
+
+#2nd approach
+for i in windowIDs:
+    driver.switch_to.window(i)
+    print(driver.title)
+
+#close our choice window
+for i in windowIDs:
+    driver.switch_to.window(i)
+    if driver.title == "OrangeHRM":
+        driver.close()
+-----------------------------------------------------------------------------------------
+mouse movements
+1) right click
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+from selenium.webdriver.common.action_chains import ActionChains
+
+
+driver.get("https://swisnl.github.io/jQuery-contextMenu/demo.html")
+button = driver.find_element("xpath","/html/body/div/section/div/div/div/p/span")
+
+act = ActionChains(driver)
+# crete action and then perform right click
+act.context_click(button).perform()
+
+2)double click
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+from selenium.webdriver.common.action_chains import ActionChains
+
+
+driver.get("https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_ev_ondblclick3")
+
+driver.switch_to.frame("iframeResult")
+
+field1 = driver.find_element("","")
+field1.clear()
+field1.send_keys("welcome")
+
+button = driver.find_element("","")
+
+act = ActionChains(driver)
+# perform double click action
+act.double_click(button).perform()
+
+3)drag and drop
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+from selenium.webdriver.common.action_chains import ActionChains
+
+
+
+driver.get("http://dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html")
+# source element
+source_ele = driver.find_element("xpath","//div[@id='box6']")
+# destination element
+target_ele = driver.find_element("xpath","//div[@id='box106']")
+
+act = ActionChains(driver)
+# drag and drop
+act.drag_and_drop(source_ele,target_ele).perform()
+
+-----------------------------------------------------------------------------
+scroller-
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+from selenium.webdriver.common.action_chains import ActionChains
+
+"""
+can do scroll using 3 option
+1) scroll down page by pixel - executing js
+
+"""
+
+driver.get("https://www.countries-ofthe-world.com/flags-of-the-world.html")
+driver.implicitly_wait(20)
+#  scroll down page by pixel
+driver.execute_script("window.scrollBy(0,3000)","")
+value = driver.execute_script("return window.pageYOffset;")
+print(value)
+
+# scroll down page till the element is visible
+flag = driver.find_element("xpath","//img[@alt='Flag of India']")
+driver.execute_script("argument[0].scrollIntoView();",flag)
+value = driver.execute_script("return window.pageYOffset;")
+print(value)
+
+# scroll down page till end
+driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
+value = driver.execute_script("return window.pageYOffset;")
+print(value)
+
+# scroll up to starting position
+
+driver.execute_script("window.scrollBy(0,-document.body.scrollHeight)")
+value = driver.execute_script("return window.pageYOffset;")
+print(value)
+
+------------------------------------------------------------------------------
+
+misclaneous topic-
+1) bootstrap dropdown -
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+from selenium.webdriver.common.action_chains import ActionChains
+
+"""
+bootstrap dropdown -
+
+"""
+
+driver.get("https://www.dummyticket.com/dummy-ticket-for-visa-application/")
+driver.find_element("xpath","//span[@id='select2-billing_country-container']").click()
+
+country_list = driver.find_elements("xpath","//ul[@id='select2-billing_country-results']/li")
+print(len(country_list))
+
+#i is a webelement - so to capture text from webelement by using text
+for i in country_list:
+    # print(i.text)
+    if i.text == "India":
+        i.click()
+
+--------------------------------------------------------------------------------------------------------
+2) screeshot -
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+from selenium.webdriver.common.action_chains import ActionChains
+import os
+
+"""
+In driver there is method is available to capture screenshot
+how to capture screenshot of any webpage -
+we can capture full page screenshot
+always maximize window otherwise it will not take screenshot
+driver.save_screenshot - we need to specify path where screenshot will save
+ - if you dont want to give full path then current file path can give using os.getcwd() method
+ os.getcwd() - driver.save_screenshot(os.getcwd()+"\\screenshpt.png")
+
+"""
+driver.get("https://google.com")
+#need to maximize window for capture screenshot
+driver.maximize_window()
+
+# driver.save_screenshot(os.getcwd()+"rohini.png")
+# if you will not specify the path from where script is running from there file will be created
+# driver.get_screenshot_as_file("sc.png")
+driver.get_screenshot_as_base64("base.png")
+driver.get_screenshot_as_png("kl.png")
+
+-----------------------------------------------------------------------------------------------------------------
+tabs and window
+-------------------->
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+from selenium.webdriver.common.action_chains import ActionChains
+
+driver = webdriver.Chrome()
+# new tab - selenium4 - opens a new tab and switches to new tab
+# driver.get("https://www.opencart.com/")
+# driver.switch_to.new_window('tab')
+# driver.get("https://www.orangehrm.com/")
+# opens a new browser window and switches to window
+driver.get("https://www.opencart.com/")
+driver.switch_to.new_window('window')
+driver.get("https://www.orangehrm.com/")
+---------------------------------------------------------
+cookies -
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+driver= webdriver.Chrome()
+
+"""
+how to handle cookies -
+test our application is creating cookie or not?
+every cookie having some attribute such as -
+name
+value
+expirydate
+also every cookie having its value
+it will store in one dictionary so it considered as one cookie
+
+how to add cookie -
+add in the form of dictionary
+
+
+"""
+
+
+driver = webdriver.Chrome()
+driver.get("https://demo.nopcommerce.com/")
+
+#capture cookies from the browser
+cookies = driver.get_cookies()
+print(len(cookies)) #3
+
+# #print details of all cookies
+# for i in cookies:
+#     # print(i)
+#     print(i.get('name'),"",i.get("value"))
+
+# add new cookie to the browser
+driver.add_cookie({"name":"Mycookie","value":"1234"})
+cookies = driver.get_cookies()
+print(len(cookies))
+
+# delete specific cookie from the browser
+driver.delete_cookie("Mycookie")
+cookies = driver.get_cookies()
+print(len(cookies))
+#  delete all the cookies
+driver.delete_all_cookies()
+cookies = driver.get_cookies()
+print(len(cookies))
+--------------------------------------------------------------------
+headless mode test ---->
+
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+
+
+"""
+headless mode - execute script without any UI
+test case execute in backend
+disadvantage -
+1)while executing sceipt in headless - can not perform other activities
+2) if u newly joined you dont know the flow then how u will know whether it is properly doing or not
+advantage -
+1) can do multiple task parallely - you can minimize window and can do other task parallely
+2) script execution very fast
+It is useful when u already perform multiple round of execution of automation script
+before relese /sign up
+
+
+
+"""
+def headless_chrome():
+    driver= webdriver.Chrome()
+    ops=webdriver.ChromeOptions()
+    ops.headless = True
+    driver = webdriver.Chrome(service=None,options=ops)
+    return driver
+
+driver = headless_chrome()
+driver.get("https://demo.nopcommerce.com/")
+print(driver.title)
+print(driver.current_url)
+------------------------------------------------------------------------------------
+notification pop up -
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+
+ops = webdriver.ChromeOptions
+ops.add_argument("--disable-notification")
+
+driver = webdriver.Chrome(options=ops)
+driver.get("https://whatmylocation.com/")
+-----------------------------------------------------------
+webtable ----
+from selenium import webdriver
+
+
+
+"""
+webtable - static and dynamic
+following tags for table -
+table - craete table
+tbody - table data is under this
+th - header of table
+tr - tble row
+td - table data
+
+mostly used customized xpath/dynamic xpath
+1) count number of rows and columns
+2) read specific row and column data
+3) read all the rows nd column data -->
+ # parameterizing value into xpath
+//table[@name='BookTable']//tbody//tr[5]//td[1]" -->"//table[@name='BookTable']//tbody//tr["+str(r)+"]//td["+str(c)+"]"
+
+4) read data based on condition
+
+"""
+driver = webdriver.Chrome()
+driver.get("https://testautomationpractice.blogspot.com/")
+driver.implicitly_wait(10)
+# 1) count number of rows and columns
+no_of_rows = len(driver.find_elements("xpath","//table[@name='BookTable']//tr"))
+no_of_columns = len(driver.find_elements("xpath","//table[@name='BookTable']//th"))
+print(no_of_columns,no_of_rows) #4 7
+
+# how to read specific row and column data
+data = driver.find_element("xpath","//table[@name='BookTable']//tbody//tr[5]//td[1]").text
+print(data)
+
+# read all rows and columns
+for r in range(2,no_of_rows+1):
+    for c in range(1,no_of_columns+1):
+        driver.find_element("xpath","")
+        # parameterizing value into xpath
+        data = driver.find_element("xpath", "//table[@name='BookTable']//tbody//tr["+str(r)+"]//td["+str(c)+"]").text
+        print(data,end='                ')
+    print()
+
+# read data based on condition
+for r in range(2,no_of_rows+1):
+    auther_name=driver.find_element("xpath","//table[@name='BookTable']//tbody//tr["+str(r)+"]//td[2]").text
+    if auther_name=='mukesh':
+        book_name = auther_name = driver.find_element("xpath", "//table[@name='BookTable']//tbody//tr[" + str(r) + "]//td[1]").text
+        print(book_name,"         ",auther_name)
+
+did not get output
+----------------------------------------------------------------------------------
+date picker -
+from selenium import webdriver
+
+
+"""
+date picker/calendar
+----------
+1) standard - button,checkbox,img,links,radio button
+2) non standard (customized)- those element which is not same for all page
+date picker contains multiple standard elements
+according to design need to write script
+
+"""
+driver = webdriver.Chrome()
+driver.get("https://jqueryui.com/datepicker/")
+driver.switch_to.frame(0)
+# driver.find_element("xpath","//input[@id='datepicker']").send_keys("01/30/2022")
+year = "2024"
+month ="june"
+date = "30"
+
+driver.find_element("xpath","//input[@id='datepicker']").click()
+
+while True:
+
+    mon = driver.find_element("xpath","//span[@class='ui-datepicker-month']").text
+    yr = driver.find_element("xpath","//span[@class='ui-datepicker-year']").text
+    if mon==month and year==yr:
+        break;
+    else:
+        driver.find_element("xpath","//span[@class='ui-icon ui-icon-circle-triangle-e']")
+---------------------------------------------------------------------------------------------------------------
+data driven testing---------
+from selenium import webdriver
+from selenium.webdriver.support.select import Select
+import openpyxl
+"""
+data driven testing - we use this testing when we have some test data and u have to execute multiple time fo same test cases
+can prepare data in excel,database
+testing is done by test data
+selenium - not supported excel
+so use third party module - openpyxl - we can work with excel file(.xlsx)
+1) how to read data from excel
+2) how to write data into excel
+3) data case
+workbook.active - get active sheet from excel
+file -> workbook -> sheets -> rows -> cells
+"""
+# program to extract data from excel
+file = "C:\data\excel.xlsx"
+workbook = openpyxl.load_workbook(file)
+sheet = workbook["Sheet1"]
+#find no of rows and column
+rows = sheet.max_row
+cols = sheet.max_column
+
+for r in range(1,rows+1):
+    for c in range(1,cols+1):
+        print(sheet.cell(r,c).value,end="          ")
+    print()
+
+# # write data into excel - for same data in all cells
+file = "C:\data\excel2.xlsx"
+workbook = openpyxl.load_workbook(file)
+sheet = workbook["Sheet1"] #or wokbook.active
+for r in range(1,6):
+    for c in range(1,4):
+        sheet.cell(r,c).value="welcome"
+workbook.save(file)
+
+# write data into excel - for multiple data in all cells
+file = "C:\data\excel3.xlsx"
+workbook = openpyxl.load_workbook(file)
+sheet = workbook["Sheet1"] #or wokbook.active
+
+sheet.cell(1,1).value=123
+sheet.cell(1,2).value = "rohini"
+sheet.cell(1,3).value = "product manager"
+
+workbook.save(file)
+
+# data driven testing
+"""
+automation code
+
+excel related operation
+read
+writing
+rows
+column
+green/red
+
+excelutils :-> we use this utility for every automation test case
+read()
+writing()
+rows()
+column()
+green/red()
+Automation - validation
+
+"""
+
+import time
+
+from selenium import webdriver
+import openpyxl
+from selenium.webdriver.support.ui import Select
+from selenium_with_python.data import excel_utility
+
+driver = webdriver.Chrome()
+driver.implicitly_wait(20)
+driver.get("https://www.moneycontrol.com/fixed-income/calculator/state-bank-of-india-sbi/fixed-deposit-calculator-SBI-BSB001.html")
+
+file ="C:\data\excel3.xlsx"
+rows=excel_utility.getRowCount(file,"Sheet1")
+
+for r in range(2,rows+1):
+    price = excel_utility.readData(file,"Sheet1",r,1)
+    rate_of_interest = excel_utility.readData(file, "Sheet1", r, 2)
+    per1 = excel_utility.readData(file, "Sheet1", r, 3)
+    per2 = excel_utility.readData(file, "Sheet1", r, 4)
+    frequency = excel_utility.readData(file, "Sheet1", r, 5)
+    exp_value = price = excel_utility.readData(file,"Sheet1",r,6)
+#     passing data to the application
+    driver.find_element("xpath","//input[@id='principal']").send_keys(price)
+    driver.find_element("xpath","//input[@id='interest']").send_keys(rate_of_interest)
+    driver.find_element("xpath", "//input[@id='tenure']").send_keys(per1)
+
+    perioddrop=Select(driver.find_element("xpath","//select[@id='tenurePeriod']"))
+    perioddrop.select_by_visible_text(per2)
+
+    fre=Select(driver.find_element("xpath","//select[@id='frequency']"))
+    fre.select_by_visible_text(frequency)
+
+    driver.find_element("xpath","//img[@src='https://images.moneycontrol.com/images/mf_revamp/btn_calcutate.gif']").click()
+    act_val=driver.find_element("xpath","//span[id='resp_matval']/strong").text
+
+    # validation
+    if float(exp_value)==float(act_val):
+        print("test pass")
+        excel_utility.weiteData(file,"Sheet1",r,8,"Passed")
+
+    else:
+        print("test pass")
+        excel_utility.weiteData(file, "Sheet1", r, 8, "failed")
+    driver.find_element("xpath","//img[@class='PL5']").click()
+    time.sleep(3)
+--------------------------------------------------------------------------------------
+# Dropdown
+# - import Select
+# - inspect webelement  of select dropdown - ele = driver.find.element(By.ID,'')
+# select = Select(ele)
+# then u can access multiple methods of select
+# method 1 :
+# 1. select.select_by_visible_text('')
+# 2. select.select_by_index(5)
+# 3. select.select_by_value('')
+# 4. select.is_multiple() - it will tell you that dropdown is single select or multiselect -
+# it will return none if dropdown is not multiselect
+# 5. select.deselect_all() - to deselect options/value/index
+
+what if u have 100 dropdown:
+def select_value(element, value):
+    select = Select(element)
+    select.select_by_value(value)
+
+
+select = Select(ele)
+list = select.options
+for ele in list:
+    print(ele.text)
+    if (ele.text == 'Automotive')
+        ele.click()
+        break
+
+IQ - select dropdown without select class inspect webelements for select
+use for loop to extract options
+
+
+def select_values_from_dropdown(dropdowmoptionslist, value):
+    print(len(indus_options))
+    for ele in dropdowmoptionslist:
+        print(ele.text)
+        if ele.text == ' value'
+            ele.click()
+            break
+
+indus_options = driver.findelements(By.XPATH, ' ')
+select_values_from_dropdown(indus_options, 'Education')
+
+
+2) Jquery Dropdown - dropdown who is not having "select" tag like angular js,react or jquery
+
+
+3)
+
+
+
+# there are two types of wait
+static wait - time.sleep - wait for 5 sec if given 5 sec
+dynamic wait - we have given 10 sec time but element found in 5sec then reset of the time will be ignored.
+2 types of dynamic wait -> 1) implicit wait 2) explicit wait
+
+Implicit wait ->driver.implicitely_wait(10)
+default value is 10.
+dynamic in nature
+imw will be applied for all the web element available in the page
+global wait
+this wait will be applied whenever you user driver.element or driver.find_elements
+only for webelements
+drawback - >
+u can not apply it for url(like title of the page) or for non web element
+then u have to use explicitely wait
+-------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data Driven Testing-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+import requests
+import json
+import string
+
+base_url = "http://localhost:9090/"
+
+auth_token = "bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJzZWN1cmVMYXllcjciLCJleHAiOjE3MjE3MjkyOTksImlzcyI6InRydXN0ZWQiLCJuYW1lIjoiMTFmMjk3NzQtMDA1Yi00NTJmLTgyNDgtZjRhMDIyNmQ0ZTgxIiwic3ViIjoic2NhbiJ9.kNt91soJmF7ZYfe70lAIyyEpQYdY-1AFMSW3L9s8iiarDwQI8yttt3Ce8AAaoxeHBmcrG6eY-RGW8WoRl3zKKhNzwd-A9jIH_zHXVF8uHf2T0U78zQKCkwRRkuOi2JDyOWFpB2eTR9m6kTO2pAwda-v3PvhoJMDULFMl6h3ULKNvRCXhuQii740MTK03yOE5oqI_XLjcIomx2z1tgjNIBgCnu7yogp9ceAWuFmHtbWPjFolqeP07cvzbB5Hz6vhSRc7ZgnvBSiUsOPS5ms0TcXZ3rI5b9BKXPXrnhTn0ry-I1OtGLEqenpLtdbI1LFqF24-ZIq4lH2PbCp8ISyjWUY6pIZ5VEO6hEfs9G9xpRzAVv_Xq2bXbOYLFM9Cu_watmB9FntbxqVuuUJgepH1v37Rj7uOmzess3L8rDcycLGXLK7urYGLfAVYGom_myrylvJUg_e9Xdcv2oyaQ6rrvBu3MDOAO7lCdMNC_8uA1z1Hg34ZoFA2Q2tScR9plXAjVUm7jQadCGHJHlHGo5KGHgeL8uZYigBN9JMUD6Zg-WG_G44HqnmOwveKb6WOxUWhNzOkJA_fDFNzan8PNQC7NBGj1uTdIZ4z4zn_pCWRsE5IlCm5OHIFXkf5zqhdJ7fmHJFUBMEbOsIbDiLrDtuMUC6SrplvhCnTYn-g2Yhr8eSA"
+
+def get_request():
+    url=base_url+"v1/getProjectDashboard"
+    print(url)
+    headers = {"Authorization": auth_token}
+    response = requests.get(url,headers=headers)
+    assert response.status_code == 200
+    json_data = response.json()
+    print(json.dumps(json_data, indent=4))
+
+get_request()

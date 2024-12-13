@@ -1,0 +1,85 @@
+Pytest feature :
+1) it is open source
+2) if you run with "py.test" command then it will run all function of that pkg who is start with "test"
+3) execution file command - "py.test test_demo.py" , "py.test dir_path"
+py.test ->this command will execute all the file - if you want to execute particular function then execute
+ cmd -> py.test foldername/filename.py
+4) command for running particular function by the given keyword - "py.test -k login -v"
+
+
+Run test in group :
+1) can create no of markers then execute based on marker also can do parallel execution
+2) @pytest.mark.login - if we define this in above function then all fun with "login" marker it will execute by running command
+cmd - py.test -m login
+-m -> marker for login
+
+
+
+conftest file :
+1) will have to save with file name as "conftest"
+
+
+
+
+
+Fixtures :
+The purpose of test fixtures is to provide a fixed baseline upon which tests can reliably and repeatedly execute.
+
+
+@pytest.fixture() :
+    - Execute specific method before every test method
+@pytest.yield_fixture():
+    - Execute specific method before and after test method
+
+    -----------------------------------------------------------------------------------
+
+    cmd to install library -
+    pip install pytest
+
+import pytest
+
+
+cmd for run -> py.test -> it will check all file start with "test" it will run all program start with "test"
+so cmd to test perticular file "py.test filename.py "
+cmd to run perticular file having specific keyword -> py.test -k login -v
+-k -> represent keyword identifier
+-v -> represent more verbose
+
+Topic2 - execution in parallel mode with the help of marker
+ function ke upar likhna hoga -> @pytest.mark.login
+
+py.test -m login -> sabhi file me jaha login marker hoga vo run hoga
+
+-m -> represent marker name
+
+agar particular file ka run krna hai to cmd -> py.test pkgName/FileName.py -m login
+
+
+To Run yor test in parallel mode
+- install pkg -> pip install pytest-xdist
+- cmd -. py.test -n 4
+- cmd -> py.test pkgName/fileName.py -n 4
+4 browsers will run same time
+
+PyTest Fixtures
+we use fixture as set up and tear down method
+used when if we have any prerequisite
+how to represent fixture - can use annotation above fixture method as @pytest.fixture(scope = 'module')
+method1 - to use fixture in code we have to pass fixture name in parameter to method
+method2 - can use annotation above method as @pytest.mark.usefixtures("init_driver")
+
+cmd to execute - pytest test_google_fixture.py -v -s --html=test_doc.html
+
+-v -> we use whe we want more verbose or more detail information
+-s -> we use when we want to show print statement
+
+
+Confest.py
+-> it is use in throughout the test classes
+-> craete python file with name "confest.py"
+-> @pytest.fixture -> whatever the function will return it can acccess by any test method
+-> it is behave like fixture global precondition for all the test classes
+
+
+Parameterization
+

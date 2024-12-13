@@ -1,0 +1,535 @@
+{
+	"info": {
+		"_postman_id": "be23a181-8dce-4921-8c95-27447eb9f91b",
+		"name": "Sensfrx APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31134762"
+	},
+	"item": [
+		{
+			"name": "Risk APIs",
+			"item": [
+				{
+					"name": "Account Security",
+					"item": [
+						{
+							"name": "successful login",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"ev\": \"login_succeeded\",\r\n    \"uID\": \"15\",\r\n    \"dID\": \"eyJwdGwiOiJIZWxsbywgd29ybGQhIiwiZXYiOiJtX2wiLCJldCI6IjIwMjItMDktMDZUMTA6MzA6NDUuMDUyWiIsImNzIjoiVVRGLTgiLCJzciI6IjE1MzZ4ODY0IiwidnAiOiIxNTM2eDcxNCIsImNkIjoyNCwidHoiOi01LjUsImhjIjo4LCJtdCI6WyJhcHBsaWNhdGlvbi9wZGYiLCJ0ZXh0L3BkZiJdLCJwIjpbIlBERiBWaWV3ZXIiLCJDaHJvbWUgUERGIFZpZXdlciIsIkNocm9taXVtIFBERiBWaWV3ZXIiLCJNaWNyb3NvZnQgRWRnZSBQREYgVmlld2VyIiwiV2ViS2l0IGJ1aWx0LWluIFBERiJdLCJ0byI6IjIwMjItMDktMDZUMTA6MTY6MDguMTI3WiIsInBvIjoiaHR0cHM6Ly9kZW1vLWF1dGhzYWZlLmhlcm9rdWFwcC5jb20vbG9naW4ucGhwIiwicmYiOiJodHRwczovL2RlbW8tYXV0aHNhZmUuaGVyb2t1YXBwLmNvbS9pbmRleC5waHAiLCJwcyI6NCwiYm4iOiJOZXRzY2FwZSIsImJsIjoiZW4tVVMiLCJqZSI6MCwibGUiOiJtX3MiLCJkbSI6OCwid2QiOjAsIndnbHYiOiJHb29nbGUgSW5jLiAoSW50ZWwpIiwid2dsciI6IkFOR0xFIChJbnRlbCwgSW50ZWwoUikgSXJpcyhSKSBYZSBHcmFwaGljcyBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsInRlIjpmYWxzZSwibXRwIjowLCJjZSI6MSwiYXgiOiJBY3RpdmVYIE9iamVjdCBub3Qgc3VwcG9ydGVkIiwicGFsIjpbXSwicG0iOjAsIl9fYXN0ayI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpqZFNJNk1UTXlMQ0p3Y2lJNk1qUXhMQ0p6WlhOelgybGtJam9pT1RabFptVXlObVV0WVRFMU5DMDBOekk0TFdJMk1UZ3RaVFEzT0RZek1EQmhOR013SWl3aWFXRjBJam94TmpZeU5EVTRNalU1TENKbGVIQWlPakUyTmpJMU1UVTROVGw5LnpRa2J6cnNlQW5PekFmekNRcFJORUs0Z3o2QTdFN091QnR3Z3UtWWNwc0kiLCJ2c2kiOiI5NmVmZTI2ZS1hMTU0LTQ3MjgtYjYxOC1lNDc4NjMwMGE0YzAiLCJ2ZGkiOiIxM2I4MTQ3My1kOGMzLTRmNTctOWIzMC1hODVkODI3NzViYjQiLCJhc2RpIjoiNmQ2NTQwIiwiYXNiaSI6ImIyZGUyOSIsImFzc2kiOiJlZDA0Yjc5YS0yZGNjLTExZWQtYjU4OS0wMDBjMjlhNWNkOGMiLCJtX20iOjEzLCJzX3UiOjAsInNfZCI6MCwieCI6ODE2LCJ5IjozNzMsInN0IjowLCJ2IjowLCJlbCI6ImJ1dHRvbiIsImVsSUQiOiJsb2dpbi1idXR0b24iLCJjbCI6e319\",\r\n    \"uex\": {\r\n      \"email\": null,\r\n      \"username\": \"admin15\"\r\n    },\r\n    \"h\": {\r\n      \"ip\": \"45.252.74.134\",\r\n      \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36\",\r\n      \"ho\": \"demo.sensfrx.ai\",\r\n      \"rf\": \"https://demo.sensfrx.ai/login.php\",\r\n      \"ac\": {\r\n        \"a\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\",\r\n        \"ae\": \"gzip, deflate, br\",\r\n        \"al\": \"en-US,en;q=0.9,hi;q=0.8,mr;q=0.7\"\r\n      },\r\n      \"url\": \"http://demo.sensfrx.ai/login.php\"\r\n    }\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://adev.sensfrx.ai/v1/login",
+									"protocol": "https",
+									"host": [
+										"adev",
+										"sensfrx",
+										"ai"
+									],
+									"path": [
+										"v1",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "failed login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"ev\": \"login_failed\",\r\n    \"uID\": \"15\",\r\n    \"dID\": \"eyJwdGwiOiJIZWxsbywgd29ybGQhIiwiZXYiOiJtX2wiLCJldCI6IjIwMjItMDktMDZUMTA6MzA6NDUuMDUyWiIsImNzIjoiVVRGLTgiLCJzciI6IjE1MzZ4ODY0IiwidnAiOiIxNTM2eDcxNCIsImNkIjoyNCwidHoiOi01LjUsImhjIjo4LCJtdCI6WyJhcHBsaWNhdGlvbi9wZGYiLCJ0ZXh0L3BkZiJdLCJwIjpbIlBERiBWaWV3ZXIiLCJDaHJvbWUgUERGIFZpZXdlciIsIkNocm9taXVtIFBERiBWaWV3ZXIiLCJNaWNyb3NvZnQgRWRnZSBQREYgVmlld2VyIiwiV2ViS2l0IGJ1aWx0LWluIFBERiJdLCJ0byI6IjIwMjItMDktMDZUMTA6MTY6MDguMTI3WiIsInBvIjoiaHR0cHM6Ly9kZW1vLWF1dGhzYWZlLmhlcm9rdWFwcC5jb20vbG9naW4ucGhwIiwicmYiOiJodHRwczovL2RlbW8tYXV0aHNhZmUuaGVyb2t1YXBwLmNvbS9pbmRleC5waHAiLCJwcyI6NCwiYm4iOiJOZXRzY2FwZSIsImJsIjoiZW4tVVMiLCJqZSI6MCwibGUiOiJtX3MiLCJkbSI6OCwid2QiOjAsIndnbHYiOiJHb29nbGUgSW5jLiAoSW50ZWwpIiwid2dsciI6IkFOR0xFIChJbnRlbCwgSW50ZWwoUikgSXJpcyhSKSBYZSBHcmFwaGljcyBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsInRlIjpmYWxzZSwibXRwIjowLCJjZSI6MSwiYXgiOiJBY3RpdmVYIE9iamVjdCBub3Qgc3VwcG9ydGVkIiwicGFsIjpbXSwicG0iOjAsIl9fYXN0ayI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpqZFNJNk1UTXlMQ0p3Y2lJNk1qUXhMQ0p6WlhOelgybGtJam9pT1RabFptVXlObVV0WVRFMU5DMDBOekk0TFdJMk1UZ3RaVFEzT0RZek1EQmhOR013SWl3aWFXRjBJam94TmpZeU5EVTRNalU1TENKbGVIQWlPakUyTmpJMU1UVTROVGw5LnpRa2J6cnNlQW5PekFmekNRcFJORUs0Z3o2QTdFN091QnR3Z3UtWWNwc0kiLCJ2c2kiOiI5NmVmZTI2ZS1hMTU0LTQ3MjgtYjYxOC1lNDc4NjMwMGE0YzAiLCJ2ZGkiOiIxM2I4MTQ3My1kOGMzLTRmNTctOWIzMC1hODVkODI3NzViYjQiLCJhc2RpIjoiNmQ2NTQwIiwiYXNiaSI6ImIyZGUyOSIsImFzc2kiOiJlZDA0Yjc5YS0yZGNjLTExZWQtYjU4OS0wMDBjMjlhNWNkOGMiLCJtX20iOjEzLCJzX3UiOjAsInNfZCI6MCwieCI6ODE2LCJ5IjozNzMsInN0IjowLCJ2IjowLCJlbCI6ImJ1dHRvbiIsImVsSUQiOiJsb2dpbi1idXR0b24iLCJjbCI6e319\",\r\n    \"uex\": {\r\n      \"email\": null,\r\n      \"username\": \"admin15\"\r\n    },\r\n    \"h\": {\r\n      \"ip\": \"45.252.74.134\",\r\n      \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36\",\r\n      \"ho\": \"demo.sensfrx.ai\",\r\n      \"rf\": \"https://demo.sensfrx.ai/login.php\",\r\n      \"ac\": {\r\n        \"a\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\",\r\n        \"ae\": \"gzip, deflate, br\",\r\n        \"al\": \"en-US,en;q=0.9,hi;q=0.8,mr;q=0.7\"\r\n      },\r\n      \"url\": \"http://demo.sensfrx.ai/login.php\"\r\n    }\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://adev.sensfrx.ai/v1/login",
+									"protocol": "https",
+									"host": [
+										"adev",
+										"sensfrx",
+										"ai"
+									],
+									"path": [
+										"v1",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "failed reset password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"ev\": \"reset_password_failed\",\r\n    \"uID\": \"15\",\r\n    \"dID\": \"eyJwdGwiOiJIZWxsbywgd29ybGQhIiwiZXYiOiJtX2wiLCJldCI6IjIwMjItMDktMDZUMTA6MzA6NDUuMDUyWiIsImNzIjoiVVRGLTgiLCJzciI6IjE1MzZ4ODY0IiwidnAiOiIxNTM2eDcxNCIsImNkIjoyNCwidHoiOi01LjUsImhjIjo4LCJtdCI6WyJhcHBsaWNhdGlvbi9wZGYiLCJ0ZXh0L3BkZiJdLCJwIjpbIlBERiBWaWV3ZXIiLCJDaHJvbWUgUERGIFZpZXdlciIsIkNocm9taXVtIFBERiBWaWV3ZXIiLCJNaWNyb3NvZnQgRWRnZSBQREYgVmlld2VyIiwiV2ViS2l0IGJ1aWx0LWluIFBERiJdLCJ0byI6IjIwMjItMDktMDZUMTA6MTY6MDguMTI3WiIsInBvIjoiaHR0cHM6Ly9kZW1vLWF1dGhzYWZlLmhlcm9rdWFwcC5jb20vbG9naW4ucGhwIiwicmYiOiJodHRwczovL2RlbW8tYXV0aHNhZmUuaGVyb2t1YXBwLmNvbS9pbmRleC5waHAiLCJwcyI6NCwiYm4iOiJOZXRzY2FwZSIsImJsIjoiZW4tVVMiLCJqZSI6MCwibGUiOiJtX3MiLCJkbSI6OCwid2QiOjAsIndnbHYiOiJHb29nbGUgSW5jLiAoSW50ZWwpIiwid2dsciI6IkFOR0xFIChJbnRlbCwgSW50ZWwoUikgSXJpcyhSKSBYZSBHcmFwaGljcyBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsInRlIjpmYWxzZSwibXRwIjowLCJjZSI6MSwiYXgiOiJBY3RpdmVYIE9iamVjdCBub3Qgc3VwcG9ydGVkIiwicGFsIjpbXSwicG0iOjAsIl9fYXN0ayI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpqZFNJNk1UTXlMQ0p3Y2lJNk1qUXhMQ0p6WlhOelgybGtJam9pT1RabFptVXlObVV0WVRFMU5DMDBOekk0TFdJMk1UZ3RaVFEzT0RZek1EQmhOR013SWl3aWFXRjBJam94TmpZeU5EVTRNalU1TENKbGVIQWlPakUyTmpJMU1UVTROVGw5LnpRa2J6cnNlQW5PekFmekNRcFJORUs0Z3o2QTdFN091QnR3Z3UtWWNwc0kiLCJ2c2kiOiI5NmVmZTI2ZS1hMTU0LTQ3MjgtYjYxOC1lNDc4NjMwMGE0YzAiLCJ2ZGkiOiIxM2I4MTQ3My1kOGMzLTRmNTctOWIzMC1hODVkODI3NzViYjQiLCJhc2RpIjoiNmQ2NTQwIiwiYXNiaSI6ImIyZGUyOSIsImFzc2kiOiJlZDA0Yjc5YS0yZGNjLTExZWQtYjU4OS0wMDBjMjlhNWNkOGMiLCJtX20iOjEzLCJzX3UiOjAsInNfZCI6MCwieCI6ODE2LCJ5IjozNzMsInN0IjowLCJ2IjowLCJlbCI6ImJ1dHRvbiIsImVsSUQiOiJsb2dpbi1idXR0b24iLCJjbCI6e319\",\r\n    \"uex\": {\r\n      \"email\": null,\r\n      \"username\": \"admin15\"\r\n    },\r\n    \"h\": {\r\n      \"ip\": \"45.252.74.134\",\r\n      \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36\",\r\n      \"ho\": \"demo.sensfrx.ai\",\r\n      \"rf\": \"https://demo.sensfrx.ai/login.php\",\r\n      \"ac\": {\r\n        \"a\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\",\r\n        \"ae\": \"gzip, deflate, br\",\r\n        \"al\": \"en-US,en;q=0.9,hi;q=0.8,mr;q=0.7\"\r\n      },\r\n      \"url\": \"http://demo.sensfrx.ai/login.php\"\r\n    }\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://adev.sensfrx.ai/v1/reset-password?uex",
+									"protocol": "https",
+									"host": [
+										"adev",
+										"sensfrx",
+										"ai"
+									],
+									"path": [
+										"v1",
+										"reset-password"
+									],
+									"query": [
+										{
+											"key": "uex",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "successful reset password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"ev\": \"reset_password_succeeded\",\r\n    \"uID\": \"15\",\r\n    \"dID\": \"eyJwdGwiOiJIZWxsbywgd29ybGQhIiwiZXYiOiJtX2wiLCJldCI6IjIwMjItMDktMDZUMTA6MzA6NDUuMDUyWiIsImNzIjoiVVRGLTgiLCJzciI6IjE1MzZ4ODY0IiwidnAiOiIxNTM2eDcxNCIsImNkIjoyNCwidHoiOi01LjUsImhjIjo4LCJtdCI6WyJhcHBsaWNhdGlvbi9wZGYiLCJ0ZXh0L3BkZiJdLCJwIjpbIlBERiBWaWV3ZXIiLCJDaHJvbWUgUERGIFZpZXdlciIsIkNocm9taXVtIFBERiBWaWV3ZXIiLCJNaWNyb3NvZnQgRWRnZSBQREYgVmlld2VyIiwiV2ViS2l0IGJ1aWx0LWluIFBERiJdLCJ0byI6IjIwMjItMDktMDZUMTA6MTY6MDguMTI3WiIsInBvIjoiaHR0cHM6Ly9kZW1vLWF1dGhzYWZlLmhlcm9rdWFwcC5jb20vbG9naW4ucGhwIiwicmYiOiJodHRwczovL2RlbW8tYXV0aHNhZmUuaGVyb2t1YXBwLmNvbS9pbmRleC5waHAiLCJwcyI6NCwiYm4iOiJOZXRzY2FwZSIsImJsIjoiZW4tVVMiLCJqZSI6MCwibGUiOiJtX3MiLCJkbSI6OCwid2QiOjAsIndnbHYiOiJHb29nbGUgSW5jLiAoSW50ZWwpIiwid2dsciI6IkFOR0xFIChJbnRlbCwgSW50ZWwoUikgSXJpcyhSKSBYZSBHcmFwaGljcyBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsInRlIjpmYWxzZSwibXRwIjowLCJjZSI6MSwiYXgiOiJBY3RpdmVYIE9iamVjdCBub3Qgc3VwcG9ydGVkIiwicGFsIjpbXSwicG0iOjAsIl9fYXN0ayI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpqZFNJNk1UTXlMQ0p3Y2lJNk1qUXhMQ0p6WlhOelgybGtJam9pT1RabFptVXlObVV0WVRFMU5DMDBOekk0TFdJMk1UZ3RaVFEzT0RZek1EQmhOR013SWl3aWFXRjBJam94TmpZeU5EVTRNalU1TENKbGVIQWlPakUyTmpJMU1UVTROVGw5LnpRa2J6cnNlQW5PekFmekNRcFJORUs0Z3o2QTdFN091QnR3Z3UtWWNwc0kiLCJ2c2kiOiI5NmVmZTI2ZS1hMTU0LTQ3MjgtYjYxOC1lNDc4NjMwMGE0YzAiLCJ2ZGkiOiIxM2I4MTQ3My1kOGMzLTRmNTctOWIzMC1hODVkODI3NzViYjQiLCJhc2RpIjoiNmQ2NTQwIiwiYXNiaSI6ImIyZGUyOSIsImFzc2kiOiJlZDA0Yjc5YS0yZGNjLTExZWQtYjU4OS0wMDBjMjlhNWNkOGMiLCJtX20iOjEzLCJzX3UiOjAsInNfZCI6MCwieCI6ODE2LCJ5IjozNzMsInN0IjowLCJ2IjowLCJlbCI6ImJ1dHRvbiIsImVsSUQiOiJsb2dpbi1idXR0b24iLCJjbCI6e319\",\r\n    \"uex\": {\r\n      \"email\": null,\r\n      \"username\": \"admin15\"\r\n    },\r\n    \"h\": {\r\n      \"ip\": \"45.252.74.134\",\r\n      \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36\",\r\n      \"ho\": \"demo.sensfrx.ai\",\r\n      \"rf\": \"https://demo.sensfrx.ai/login.php\",\r\n      \"ac\": {\r\n        \"a\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\",\r\n        \"ae\": \"gzip, deflate, br\",\r\n        \"al\": \"en-US,en;q=0.9,hi;q=0.8,mr;q=0.7\"\r\n      },\r\n      \"url\": \"http://demo.sensfrx.ai/login.php\"\r\n    }\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https:/adev.sensfrx.ai/v1/reset-password?uex",
+									"host": [
+										"https"
+									],
+									"port": "",
+									"path": [
+										"adev.sensfrx.ai",
+										"v1",
+										"reset-password"
+									],
+									"query": [
+										{
+											"key": "uex",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Fake Registration",
+					"item": [
+						{
+							"name": "failed register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"ev\": \"register_failed\",\r\n  \"dID\": \"eyJwdGwiOiJIZWxsbywgd29ybGQhIiwiZXYiOiJtX2wiLCJldCI6IjIwMjItMDktMDZUMTE6MTQ6MTcuMzI2WiIsImNzIjoiVVRGLTgiLCJzciI6IjE1MzZ4ODY0IiwidnAiOiIxNTM2eDcxNCIsImNkIjoyNCwidHoiOi01LjUsImhjIjo4LCJtdCI6WyJhcHBsaWNhdGlvbi9wZGYiLCJ0ZXh0L3BkZiJdLCJwIjpbIlBERiBWaWV3ZXIiLCJDaHJvbWUgUERGIFZpZXdlciIsIkNocm9taXVtIFBERiBWaWV3ZXIiLCJNaWNyb3NvZnQgRWRnZSBQREYgVmlld2VyIiwiV2ViS2l0IGJ1aWx0LWluIFBERiJdLCJ0byI6IjIwMjItMDktMDZUMTE6MTM6MTguNDc0WiIsInBvIjoiaHR0cHM6Ly9kZW1vLWF1dGhzYWZlLmhlcm9rdWFwcC5jb20vcmVnaXN0ZXIucGhwIiwicmYiOiJodHRwczovL2RlbW8tYXV0aHNhZmUuaGVyb2t1YXBwLmNvbS9sb2dpbi5waHAiLCJwcyI6MywiYm4iOiJOZXRzY2FwZSIsImJsIjoiZW4tVVMiLCJqZSI6MCwibGUiOiJtX3MiLCJkbSI6OCwid2QiOjAsIndnbHYiOiJHb29nbGUgSW5jLiAoSW50ZWwpIiwid2dsciI6IkFOR0xFIChJbnRlbCwgSW50ZWwoUikgSXJpcyhSKSBYZSBHcmFwaGljcyBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsInRlIjpmYWxzZSwibXRwIjowLCJjZSI6MSwiYXgiOiJBY3RpdmVYIE9iamVjdCBub3Qgc3VwcG9ydGVkIiwicGFsIjpbXSwicG0iOjAsIl9fYXN0ayI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpqZFNJNk1UTXlMQ0p3Y2lJNk1qUXhMQ0p6WlhOelgybGtJam9pT1RabFptVXlObVV0WVRFMU5DMDBOekk0TFdJMk1UZ3RaVFEzT0RZek1EQmhOR013SWl3aWFXRjBJam94TmpZeU5EWXhOamc1TENKbGVIQWlPakUyTmpJMU1Ua3lPRGw5LjRvaUk5V3ZhMU9zbmRMWlMxMmg2emliVnBEQnBWNnluZWFCUFlrZUM4dmsiLCJ2c2kiOiI5NmVmZTI2ZS1hMTU0LTQ3MjgtYjYxOC1lNDc4NjMwMGE0YzAiLCJ2ZGkiOiIxM2I4MTQ3My1kOGMzLTRmNTctOWIzMC1hODVkODI3NzViYjQiLCJhc2RpIjoiNmQ2NTQwIiwiYXNiaSI6ImIyZGUyOSIsImFzc2kiOiJlZDA0Yjc5YS0yZGNjLTExZWQtYjU4OS0wMDBjMjlhNWNkOGMiLCJtX20iOjI4LCJzX3UiOjAsInNfZCI6MCwieCI6ODQxLCJ5Ijo0OTUsInN0IjowLCJ2IjowLCJlbCI6ImJ1dHRvbiIsImVsSUQiOiJsb2dpbi1idXR0b24iLCJjbCI6e319\",\r\n  \"rfs\": {\r\n    \"email\": \"jumbo.king@yopmail.com\",\r\n    \"name\": \"Jumbo King\",\r\n    \"phone\": \"9876543210\",\r\n    \"password\": \"123456\"\r\n  },\r\n  \"h\": {\r\n    \"ip\": \"45.252.74.134\",\r\n    \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36\",\r\n    \"ho\": \"demo.sensfrx.ai\",\r\n    \"rf\": \"https://demo-authsafe.herokuapp.com/register.php\",\r\n    \"ac\": {\r\n      \"a\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\",\r\n      \"ae\": \"gzip, deflate, br\",\r\n      \"al\": \"en-US,en;q=0.9,hi;q=0.8,mr;q=0.7\"\r\n    },\r\n    \"url\": \"http://demo-authsafe.herokuapp.com/register.php\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://adev.sensfrx.ai/v1/register",
+									"protocol": "https",
+									"host": [
+										"adev",
+										"sensfrx",
+										"ai"
+									],
+									"path": [
+										"v1",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "successful register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"ev\": \"register_succeeded\",\r\n  \"dID\": \"eyJwdGwiOiJIZWxsbywgd29ybGQhIiwiZXYiOiJtX2wiLCJldCI6IjIwMjItMDktMDZUMTE6MTQ6MTcuMzI2WiIsImNzIjoiVVRGLTgiLCJzciI6IjE1MzZ4ODY0IiwidnAiOiIxNTM2eDcxNCIsImNkIjoyNCwidHoiOi01LjUsImhjIjo4LCJtdCI6WyJhcHBsaWNhdGlvbi9wZGYiLCJ0ZXh0L3BkZiJdLCJwIjpbIlBERiBWaWV3ZXIiLCJDaHJvbWUgUERGIFZpZXdlciIsIkNocm9taXVtIFBERiBWaWV3ZXIiLCJNaWNyb3NvZnQgRWRnZSBQREYgVmlld2VyIiwiV2ViS2l0IGJ1aWx0LWluIFBERiJdLCJ0byI6IjIwMjItMDktMDZUMTE6MTM6MTguNDc0WiIsInBvIjoiaHR0cHM6Ly9kZW1vLWF1dGhzYWZlLmhlcm9rdWFwcC5jb20vcmVnaXN0ZXIucGhwIiwicmYiOiJodHRwczovL2RlbW8tYXV0aHNhZmUuaGVyb2t1YXBwLmNvbS9sb2dpbi5waHAiLCJwcyI6MywiYm4iOiJOZXRzY2FwZSIsImJsIjoiZW4tVVMiLCJqZSI6MCwibGUiOiJtX3MiLCJkbSI6OCwid2QiOjAsIndnbHYiOiJHb29nbGUgSW5jLiAoSW50ZWwpIiwid2dsciI6IkFOR0xFIChJbnRlbCwgSW50ZWwoUikgSXJpcyhSKSBYZSBHcmFwaGljcyBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsInRlIjpmYWxzZSwibXRwIjowLCJjZSI6MSwiYXgiOiJBY3RpdmVYIE9iamVjdCBub3Qgc3VwcG9ydGVkIiwicGFsIjpbXSwicG0iOjAsIl9fYXN0ayI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpqZFNJNk1UTXlMQ0p3Y2lJNk1qUXhMQ0p6WlhOelgybGtJam9pT1RabFptVXlObVV0WVRFMU5DMDBOekk0TFdJMk1UZ3RaVFEzT0RZek1EQmhOR013SWl3aWFXRjBJam94TmpZeU5EWXhOamc1TENKbGVIQWlPakUyTmpJMU1Ua3lPRGw5LjRvaUk5V3ZhMU9zbmRMWlMxMmg2emliVnBEQnBWNnluZWFCUFlrZUM4dmsiLCJ2c2kiOiI5NmVmZTI2ZS1hMTU0LTQ3MjgtYjYxOC1lNDc4NjMwMGE0YzAiLCJ2ZGkiOiIxM2I4MTQ3My1kOGMzLTRmNTctOWIzMC1hODVkODI3NzViYjQiLCJhc2RpIjoiNmQ2NTQwIiwiYXNiaSI6ImIyZGUyOSIsImFzc2kiOiJlZDA0Yjc5YS0yZGNjLTExZWQtYjU4OS0wMDBjMjlhNWNkOGMiLCJtX20iOjI4LCJzX3UiOjAsInNfZCI6MCwieCI6ODQxLCJ5Ijo0OTUsInN0IjowLCJ2IjowLCJlbCI6ImJ1dHRvbiIsImVsSUQiOiJsb2dpbi1idXR0b24iLCJjbCI6e319\",\r\n  \"rfs\": {\r\n    \"email\": \"jumbo.king@yopmail.com\",\r\n    \"name\": \"Jumbo King\",\r\n    \"phone\": \"9876543210\",\r\n    \"password\": \"123456\"\r\n  },\r\n  \"h\": {\r\n    \"ip\": \"45.252.74.134\",\r\n    \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36\",\r\n    \"ho\": \"demo.sensfrx.ai\",\r\n    \"rf\": \"https://demo.sensfrx.ai/register.php\",\r\n    \"ac\": {\r\n      \"a\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\",\r\n      \"ae\": \"gzip, deflate, br\",\r\n      \"al\": \"en-US,en;q=0.9,hi;q=0.8,mr;q=0.7\"\r\n    },\r\n    \"url\": \"http://demo.sensfrx.ai/register.php\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://adev.sensfrx.ai/v1/register",
+									"protocol": "https",
+									"host": [
+										"adev",
+										"sensfrx",
+										"ai"
+									],
+									"path": [
+										"v1",
+										"register"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Bot",
+					"item": [
+						{
+							"name": "bot api",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"uID\": \"15\",\r\n    \"dID\": \"eyJwdGwiOiJIZWxsbywgd29ybGQhIiwiZXYiOiJtX2wiLCJldCI6IjIwMjItMDktMDZUMTA6MzA6NDUuMDUyWiIsImNzIjoiVVRGLTgiLCJzciI6IjE1MzZ4ODY0IiwidnAiOiIxNTM2eDcxNCIsImNkIjoyNCwidHoiOi01LjUsImhjIjo4LCJtdCI6WyJhcHBsaWNhdGlvbi9wZGYiLCJ0ZXh0L3BkZiJdLCJwIjpbIlBERiBWaWV3ZXIiLCJDaHJvbWUgUERGIFZpZXdlciIsIkNocm9taXVtIFBERiBWaWV3ZXIiLCJNaWNyb3NvZnQgRWRnZSBQREYgVmlld2VyIiwiV2ViS2l0IGJ1aWx0LWluIFBERiJdLCJ0byI6IjIwMjItMDktMDZUMTA6MTY6MDguMTI3WiIsInBvIjoiaHR0cHM6Ly9kZW1vLWF1dGhzYWZlLmhlcm9rdWFwcC5jb20vbG9naW4ucGhwIiwicmYiOiJodHRwczovL2RlbW8tYXV0aHNhZmUuaGVyb2t1YXBwLmNvbS9pbmRleC5waHAiLCJwcyI6NCwiYm4iOiJOZXRzY2FwZSIsImJsIjoiZW4tVVMiLCJqZSI6MCwibGUiOiJtX3MiLCJkbSI6OCwid2QiOjAsIndnbHYiOiJHb29nbGUgSW5jLiAoSW50ZWwpIiwid2dsciI6IkFOR0xFIChJbnRlbCwgSW50ZWwoUikgSXJpcyhSKSBYZSBHcmFwaGljcyBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsInRlIjpmYWxzZSwibXRwIjowLCJjZSI6MSwiYXgiOiJBY3RpdmVYIE9iamVjdCBub3Qgc3VwcG9ydGVkIiwicGFsIjpbXSwicG0iOjAsIl9fYXN0ayI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpqZFNJNk1UTXlMQ0p3Y2lJNk1qUXhMQ0p6WlhOelgybGtJam9pT1RabFptVXlObVV0WVRFMU5DMDBOekk0TFdJMk1UZ3RaVFEzT0RZek1EQmhOR013SWl3aWFXRjBJam94TmpZeU5EVTRNalU1TENKbGVIQWlPakUyTmpJMU1UVTROVGw5LnpRa2J6cnNlQW5PekFmekNRcFJORUs0Z3o2QTdFN091QnR3Z3UtWWNwc0kiLCJ2c2kiOiI5NmVmZTI2ZS1hMTU0LTQ3MjgtYjYxOC1lNDc4NjMwMGE0YzAiLCJ2ZGkiOiIxM2I4MTQ3My1kOGMzLTRmNTctOWIzMC1hODVkODI3NzViYjQiLCJhc2RpIjoiNmQ2NTQwIiwiYXNiaSI6ImIyZGUyOSIsImFzc2kiOiJlZDA0Yjc5YS0yZGNjLTExZWQtYjU4OS0wMDBjMjlhNWNkOGMiLCJtX20iOjEzLCJzX3UiOjAsInNfZCI6MCwieCI6ODE2LCJ5IjozNzMsInN0IjowLCJ2IjowLCJlbCI6ImJ1dHRvbiIsImVsSUQiOiJsb2dpbi1idXR0b24iLCJjbCI6e319\",\r\n    \"h\": {\r\n      \"ip\": \"45.252.74.134\",\r\n      \"ua\": \"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\",\r\n      \"ho\": \"demo.sensfrx.ai\",\r\n      \"rf\": \"https://demo.sensfrx.ai/login.php\",\r\n      \"ac\": {\r\n        \"a\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\",\r\n        \"ae\": \"gzip, deflate, br\",\r\n        \"al\": \"en-US,en;q=0.9,hi;q=0.8,mr;q=0.7\"\r\n      },\r\n      \"url\": \"http://demo.sensfrx.ai/login.php\"\r\n    }\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://adev.sensfrx.ai/v1/bot",
+									"protocol": "https",
+									"host": [
+										"adev",
+										"sensfrx",
+										"ai"
+									],
+									"path": [
+										"v1",
+										"bot"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Transaction Fraud",
+					"item": [
+						{
+							"name": "successful transaction attempt",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ev\": \"attempt_succeeded\",\r\n    \"dID\": \"eyJwdGwiOiJIZWxsbywgd29ybGQhIiwiZXYiOiJtX2wiLCJldCI6IjIwMjItMDktMDZUMTA6MzA6NDUuMDUyWiIsImNzIjoiVVRGLTgiLCJzciI6IjE1MzZ4ODY0IiwidnAiOiIxNTM2eDcxNCIsImNkIjoyNCwidHoiOi01LjUsImhjIjo4LCJtdCI6WyJhcHBsaWNhdGlvbi9wZGYiLCJ0ZXh0L3BkZiJdLCJwIjpbIlBERiBWaWV3ZXIiLCJDaHJvbWUgUERGIFZpZXdlciIsIkNocm9taXVtIFBERiBWaWV3ZXIiLCJNaWNyb3NvZnQgRWRnZSBQREYgVmlld2VyIiwiV2ViS2l0IGJ1aWx0LWluIFBERiJdLCJ0byI6IjIwMjItMDktMDZUMTA6MTY6MDguMTI3WiIsInBvIjoiaHR0cHM6Ly9kZW1vLWF1dGhzYWZlLmhlcm9rdWFwcC5jb20vbG9naW4ucGhwIiwicmYiOiJodHRwczovL2RlbW8tYXV0aHNhZmUuaGVyb2t1YXBwLmNvbS9pbmRleC5waHAiLCJwcyI6NCwiYm4iOiJOZXRzY2FwZSIsImJsIjoiZW4tVVMiLCJqZSI6MCwibGUiOiJtX3MiLCJkbSI6OCwid2QiOjAsIndnbHYiOiJHb29nbGUgSW5jLiAoSW50ZWwpIiwid2dsciI6IkFOR0xFIChJbnRlbCwgSW50ZWwoUikgSXJpcyhSKSBYZSBHcmFwaGljcyBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsInRlIjpmYWxzZSwibXRwIjowLCJjZSI6MSwiYXgiOiJBY3RpdmVYIE9iamVjdCBub3Qgc3VwcG9ydGVkIiwicGFsIjpbXSwicG0iOjAsIl9fYXN0ayI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpqZFNJNk1UTXlMQ0p3Y2lJNk1qUXhMQ0p6WlhOelgybGtJam9pT1RabFptVXlObVV0WVRFMU5DMDBOekk0TFdJMk1UZ3RaVFEzT0RZek1EQmhOR013SWl3aWFXRjBJam94TmpZeU5EVTRNalU1TENKbGVIQWlPakUyTmpJMU1UVTROVGw5LnpRa2J6cnNlQW5PekFmekNRcFJORUs0Z3o2QTdFN091QnR3Z3UtWWNwc0kiLCJ2c2kiOiI5NmVmZTI2ZS1hMTU0LTQ3MjgtYjYxOC1lNDc4NjMwMGE0YzAiLCJ2ZGkiOiIxM2I4MTQ3My1kOGMzLTRmNTctOWIzMC1hODVkODI3NzViYjQiLCJhc2RpIjoiNmQ2NTQwIiwiYXNiaSI6ImIyZGUyOSIsImFzc2kiOiJlZDA0Yjc5YS0yZGNjLTExZWQtYjU4OS0wMDBjMjlhNWNkOGMiLCJtX20iOjEzLCJzX3UiOjAsInNfZCI6MCwieCI6ODE2LCJ5IjozNzMsInN0IjowLCJ2IjowLCJlbCI6ImJ1dHRvbiIsImVsSUQiOiJsb2dpbi1idXR0b24iLCJjbCI6e319\",\r\n    \"tfs\": {\r\n        \"transaction_id\": 123456789,\r\n        \"transaction_type\": \"Purchase\",\r\n        \"email\": \"admin1@yopmail.com\",\r\n        \"first_name\": \"admin1\",\r\n        \"last_name\": \"admin\",\r\n        \"username\": \"admin\",\r\n        \"user_id\": \"1\",\r\n        \"payment_mode\": \"Digital Wallet\",\r\n        \"payment_provider\": \"Paypal\",\r\n        \"card_fullname\": \"A\",\r\n        \"card_bin\": \"A\",\r\n        \"card_expire\": \"A\",\r\n        \"card_last\": \"A\",\r\n        \"cvv\": \"A\",\r\n        \"phone_no\": \"89067676\",\r\n        \"transaction_amount\": \"148\",\r\n        \"transaction_currency\": \"INR\",\r\n        \"items\": [\r\n            {\r\n                \"item_id\": \"1\",\r\n                \"item_name\": \"Lotus\",\r\n                \"item_category\": \"Flower\",\r\n                \"item_quantity\": \"1\",\r\n                \"item_price\": \"49\",\r\n                \"item_url\": \"A\"\r\n            },\r\n            {\r\n                \"item_id\": \"1\",\r\n                \"item_name\": \"Lily\",\r\n                \"item_category\": \"Flower\",\r\n                \"item_quantity\": \"1\",\r\n                \"item_price\": \"49\",\r\n                \"item_url\": \"A\"\r\n            }\r\n        ],\r\n        \"shipping_country\": \"India\",\r\n        \"shipping_state\": \"UP\",\r\n        \"shipping_city\": \"Bijnor\",\r\n        \"shipping_zip\": \"246734\",\r\n        \"shipping_phone\": \"8989595\",\r\n        \"shipping_fullname\": \"Ashish\",\r\n        \"shipping_method\": \"Standard\",\r\n        \"billing_country\": \"Inida\",\r\n        \"billing_state\": \"UP\",\r\n        \"billing_city\": \"Bijnor\",\r\n        \"billing_zip\": \"246727\",\r\n        \"billing_phone\": \"80578578\",\r\n        \"merchant_name\": \"Flower Valley\",\r\n        \"merchant_category\": \"Flowers\",\r\n        \"merchant_id\": \"123\",\r\n        \"merchant_country\": \"India\"\r\n    },\r\n    \"h\": {\r\n      \"ip\": \"45.252.74.134\",\r\n      \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36\",\r\n      \"ho\": \"demo.sensfrx.ai\",\r\n      \"rf\": \"https://demo.sensfrx.ai/login.php\",\r\n      \"ac\": {\r\n        \"a\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\",\r\n        \"ae\": \"gzip, deflate, br\",\r\n        \"al\": \"en-US,en;q=0.9,hi;q=0.8,mr;q=0.7\"\r\n      },\r\n      \"url\": \"http://demo.sensfrx.ai/login.php\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://adev.sensfrx.ai/v1/transaction",
+									"protocol": "https",
+									"host": [
+										"adev",
+										"sensfrx",
+										"ai"
+									],
+									"path": [
+										"v1",
+										"transaction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "successful transaction",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"ev\": \"transaction_succeeded\",\r\n    \"dID\": \"eyJwdGwiOiJIZWxsbywgd29ybGQhIiwiZXYiOiJtX2wiLCJldCI6IjIwMjItMDktMDZUMTA6MzA6NDUuMDUyWiIsImNzIjoiVVRGLTgiLCJzciI6IjE1MzZ4ODY0IiwidnAiOiIxNTM2eDcxNCIsImNkIjoyNCwidHoiOi01LjUsImhjIjo4LCJtdCI6WyJhcHBsaWNhdGlvbi9wZGYiLCJ0ZXh0L3BkZiJdLCJwIjpbIlBERiBWaWV3ZXIiLCJDaHJvbWUgUERGIFZpZXdlciIsIkNocm9taXVtIFBERiBWaWV3ZXIiLCJNaWNyb3NvZnQgRWRnZSBQREYgVmlld2VyIiwiV2ViS2l0IGJ1aWx0LWluIFBERiJdLCJ0byI6IjIwMjItMDktMDZUMTA6MTY6MDguMTI3WiIsInBvIjoiaHR0cHM6Ly9kZW1vLWF1dGhzYWZlLmhlcm9rdWFwcC5jb20vbG9naW4ucGhwIiwicmYiOiJodHRwczovL2RlbW8tYXV0aHNhZmUuaGVyb2t1YXBwLmNvbS9pbmRleC5waHAiLCJwcyI6NCwiYm4iOiJOZXRzY2FwZSIsImJsIjoiZW4tVVMiLCJqZSI6MCwibGUiOiJtX3MiLCJkbSI6OCwid2QiOjAsIndnbHYiOiJHb29nbGUgSW5jLiAoSW50ZWwpIiwid2dsciI6IkFOR0xFIChJbnRlbCwgSW50ZWwoUikgSXJpcyhSKSBYZSBHcmFwaGljcyBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsInRlIjpmYWxzZSwibXRwIjowLCJjZSI6MSwiYXgiOiJBY3RpdmVYIE9iamVjdCBub3Qgc3VwcG9ydGVkIiwicGFsIjpbXSwicG0iOjAsIl9fYXN0ayI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpqZFNJNk1UTXlMQ0p3Y2lJNk1qUXhMQ0p6WlhOelgybGtJam9pT1RabFptVXlObVV0WVRFMU5DMDBOekk0TFdJMk1UZ3RaVFEzT0RZek1EQmhOR013SWl3aWFXRjBJam94TmpZeU5EVTRNalU1TENKbGVIQWlPakUyTmpJMU1UVTROVGw5LnpRa2J6cnNlQW5PekFmekNRcFJORUs0Z3o2QTdFN091QnR3Z3UtWWNwc0kiLCJ2c2kiOiI5NmVmZTI2ZS1hMTU0LTQ3MjgtYjYxOC1lNDc4NjMwMGE0YzAiLCJ2ZGkiOiIxM2I4MTQ3My1kOGMzLTRmNTctOWIzMC1hODVkODI3NzViYjQiLCJhc2RpIjoiNmQ2NTQwIiwiYXNiaSI6ImIyZGUyOSIsImFzc2kiOiJlZDA0Yjc5YS0yZGNjLTExZWQtYjU4OS0wMDBjMjlhNWNkOGMiLCJtX20iOjEzLCJzX3UiOjAsInNfZCI6MCwieCI6ODE2LCJ5IjozNzMsInN0IjowLCJ2IjowLCJlbCI6ImJ1dHRvbiIsImVsSUQiOiJsb2dpbi1idXR0b24iLCJjbCI6e319\",\r\n    \"tfs\": {\r\n    \"transaction_id\": 123456789,\r\n    \"transaction_type\": \"Purchase\",\r\n    \"email\": \"admin1@yopmail.com\",\r\n    \"first_name\": \"admin1\",\r\n    \"last_name\": \"admin\",\r\n    \"username\": \"admin\",\r\n    \"user_id\": \"1\",\r\n    \"payment_mode\": \"Digital Wallet\",\r\n    \"payment_provider\": \"Paypal\",\r\n    \"card_fullname\": \"A\",\r\n    \"card_bin\": \"A\",\r\n    \"card_expire\": \"A\",\r\n    \"card_last\": \"A\",\r\n    \"cvv\": \"A\",\r\n    \"phone_no\": \"89067676\",\r\n    \"transaction_amount\": \"148\",\r\n    \"transaction_currency\": \"INR\",\r\n    \"items\": [\r\n        {\r\n            \"item_id\": \"1\",\r\n            \"item_name\": \"Lotus\",\r\n            \"item_category\": \"Flower\",\r\n            \"item_quantity\": \"1\",\r\n            \"item_price\": \"49\",\r\n            \"item_url\": \"A\"\r\n        },\r\n        {\r\n            \"item_id\": \"1\",\r\n            \"item_name\": \"Lily\",\r\n            \"item_category\": \"Flower\",\r\n            \"item_quantity\": \"1\",\r\n            \"item_price\": \"49\",\r\n            \"item_url\": \"A\"\r\n        }\r\n    ],\r\n    \"shipping_country\": \"India\",\r\n    \"shipping_state\": \"UP\",\r\n    \"shipping_city\": \"Bijnor\",\r\n    \"shipping_zip\": \"246734\",\r\n    \"shipping_phone\": \"8989595\",\r\n    \"shipping_fullname\": \"Ashish\",\r\n    \"shipping_method\": \"Standard\",\r\n    \"billing_country\": \"Inida\",\r\n    \"billing_state\": \"UP\",\r\n    \"billing_city\": \"Bijnor\",\r\n    \"billing_zip\": \"246727\",\r\n    \"billing_phone\": \"80578578\",\r\n    \"merchant_name\": \"Flower Valley\",\r\n    \"merchant_category\": \"Flowers\",\r\n    \"merchant_id\": \"123\",\r\n    \"merchant_country\": \"India\"\r\n},\r\n    \"h\": {\r\n      \"ip\": \"45.252.74.134\",\r\n      \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36\",\r\n      \"ho\": \"demo.sensfrx.ai\",\r\n      \"rf\": \"https://demo.sensfrx.ai/login.php\",\r\n      \"ac\": {\r\n        \"a\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\",\r\n        \"ae\": \"gzip, deflate, br\",\r\n        \"al\": \"en-US,en;q=0.9,hi;q=0.8,mr;q=0.7\"\r\n      },\r\n      \"url\": \"http://demo.sensfrx.ai/login.php\"\r\n    }\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://adev.sensfrx.ai/v1/transaction",
+									"protocol": "https",
+									"host": [
+										"adev",
+										"sensfrx",
+										"ai"
+									],
+									"path": [
+										"v1",
+										"transaction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "failed transaction",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"ev\": \"transaction_failed\",\r\n    \"dID\": \"eyJwdGwiOiJIZWxsbywgd29ybGQhIiwiZXYiOiJtX2wiLCJldCI6IjIwMjItMDktMDZUMTA6MzA6NDUuMDUyWiIsImNzIjoiVVRGLTgiLCJzciI6IjE1MzZ4ODY0IiwidnAiOiIxNTM2eDcxNCIsImNkIjoyNCwidHoiOi01LjUsImhjIjo4LCJtdCI6WyJhcHBsaWNhdGlvbi9wZGYiLCJ0ZXh0L3BkZiJdLCJwIjpbIlBERiBWaWV3ZXIiLCJDaHJvbWUgUERGIFZpZXdlciIsIkNocm9taXVtIFBERiBWaWV3ZXIiLCJNaWNyb3NvZnQgRWRnZSBQREYgVmlld2VyIiwiV2ViS2l0IGJ1aWx0LWluIFBERiJdLCJ0byI6IjIwMjItMDktMDZUMTA6MTY6MDguMTI3WiIsInBvIjoiaHR0cHM6Ly9kZW1vLWF1dGhzYWZlLmhlcm9rdWFwcC5jb20vbG9naW4ucGhwIiwicmYiOiJodHRwczovL2RlbW8tYXV0aHNhZmUuaGVyb2t1YXBwLmNvbS9pbmRleC5waHAiLCJwcyI6NCwiYm4iOiJOZXRzY2FwZSIsImJsIjoiZW4tVVMiLCJqZSI6MCwibGUiOiJtX3MiLCJkbSI6OCwid2QiOjAsIndnbHYiOiJHb29nbGUgSW5jLiAoSW50ZWwpIiwid2dsciI6IkFOR0xFIChJbnRlbCwgSW50ZWwoUikgSXJpcyhSKSBYZSBHcmFwaGljcyBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsInRlIjpmYWxzZSwibXRwIjowLCJjZSI6MSwiYXgiOiJBY3RpdmVYIE9iamVjdCBub3Qgc3VwcG9ydGVkIiwicGFsIjpbXSwicG0iOjAsIl9fYXN0ayI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpqZFNJNk1UTXlMQ0p3Y2lJNk1qUXhMQ0p6WlhOelgybGtJam9pT1RabFptVXlObVV0WVRFMU5DMDBOekk0TFdJMk1UZ3RaVFEzT0RZek1EQmhOR013SWl3aWFXRjBJam94TmpZeU5EVTRNalU1TENKbGVIQWlPakUyTmpJMU1UVTROVGw5LnpRa2J6cnNlQW5PekFmekNRcFJORUs0Z3o2QTdFN091QnR3Z3UtWWNwc0kiLCJ2c2kiOiI5NmVmZTI2ZS1hMTU0LTQ3MjgtYjYxOC1lNDc4NjMwMGE0YzAiLCJ2ZGkiOiIxM2I4MTQ3My1kOGMzLTRmNTctOWIzMC1hODVkODI3NzViYjQiLCJhc2RpIjoiNmQ2NTQwIiwiYXNiaSI6ImIyZGUyOSIsImFzc2kiOiJlZDA0Yjc5YS0yZGNjLTExZWQtYjU4OS0wMDBjMjlhNWNkOGMiLCJtX20iOjEzLCJzX3UiOjAsInNfZCI6MCwieCI6ODE2LCJ5IjozNzMsInN0IjowLCJ2IjowLCJlbCI6ImJ1dHRvbiIsImVsSUQiOiJsb2dpbi1idXR0b24iLCJjbCI6e319\",\r\n    \"tfs\": {\r\n    \"transaction_id\": 123456789,\r\n    \"transaction_type\": \"Purchase\",\r\n    \"email\": \"admin1@yopmail.com\",\r\n    \"first_name\": \"admin1\",\r\n    \"last_name\": \"admin\",\r\n    \"username\": \"admin\",\r\n    \"user_id\": \"1\",\r\n    \"payment_mode\": \"Digital Wallet\",\r\n    \"payment_provider\": \"Paypal\",\r\n    \"card_fullname\": \"A\",\r\n    \"card_bin\": \"A\",\r\n    \"card_expire\": \"A\",\r\n    \"card_last\": \"A\",\r\n    \"cvv\": \"A\",\r\n    \"phone_no\": \"89067676\",\r\n    \"transaction_amount\": \"148\",\r\n    \"transaction_currency\": \"INR\",\r\n    \"items\": [\r\n        {\r\n            \"item_id\": \"1\",\r\n            \"item_name\": \"Lotus\",\r\n            \"item_category\": \"Flower\",\r\n            \"item_quantity\": \"1\",\r\n            \"item_price\": \"49\",\r\n            \"item_url\": \"A\"\r\n        },\r\n        {\r\n            \"item_id\": \"1\",\r\n            \"item_name\": \"Lily\",\r\n            \"item_category\": \"Flower\",\r\n            \"item_quantity\": \"1\",\r\n            \"item_price\": \"49\",\r\n            \"item_url\": \"A\"\r\n        }\r\n    ],\r\n    \"shipping_country\": \"India\",\r\n    \"shipping_state\": \"UP\",\r\n    \"shipping_city\": \"Bijnor\",\r\n    \"shipping_zip\": \"246734\",\r\n    \"shipping_phone\": \"8989595\",\r\n    \"shipping_fullname\": \"Ashish\",\r\n    \"shipping_method\": \"Standard\",\r\n    \"billing_country\": \"Inida\",\r\n    \"billing_state\": \"UP\",\r\n    \"billing_city\": \"Bijnor\",\r\n    \"billing_zip\": \"246727\",\r\n    \"billing_phone\": \"80578578\",\r\n    \"merchant_name\": \"Flower Valley\",\r\n    \"merchant_category\": \"Flowers\",\r\n    \"merchant_id\": \"123\",\r\n    \"merchant_country\": \"India\"\r\n},\r\n    \"h\": {\r\n      \"ip\": \"45.252.74.134\",\r\n      \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36\",\r\n      \"ho\": \"demo.sensfrx.ai\",\r\n      \"rf\": \"https://demo.sensfrx.ai/login.php\",\r\n      \"ac\": {\r\n        \"a\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\",\r\n        \"ae\": \"gzip, deflate, br\",\r\n        \"al\": \"en-US,en;q=0.9,hi;q=0.8,mr;q=0.7\"\r\n      },\r\n      \"url\": \"http://demo.sensfrx.ai/login.php\"\r\n    }\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://adev.sensfrx.ai/v1/transaction",
+									"protocol": "https",
+									"host": [
+										"adev",
+										"sensfrx",
+										"ai"
+									],
+									"path": [
+										"v1",
+										"transaction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "failed transaction attempt",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"ev\": \"attempt_failed\",\r\n    \"dID\": \"eyJwdGwiOiJIZWxsbywgd29ybGQhIiwiZXYiOiJtX2wiLCJldCI6IjIwMjItMDktMDZUMTA6MzA6NDUuMDUyWiIsImNzIjoiVVRGLTgiLCJzciI6IjE1MzZ4ODY0IiwidnAiOiIxNTM2eDcxNCIsImNkIjoyNCwidHoiOi01LjUsImhjIjo4LCJtdCI6WyJhcHBsaWNhdGlvbi9wZGYiLCJ0ZXh0L3BkZiJdLCJwIjpbIlBERiBWaWV3ZXIiLCJDaHJvbWUgUERGIFZpZXdlciIsIkNocm9taXVtIFBERiBWaWV3ZXIiLCJNaWNyb3NvZnQgRWRnZSBQREYgVmlld2VyIiwiV2ViS2l0IGJ1aWx0LWluIFBERiJdLCJ0byI6IjIwMjItMDktMDZUMTA6MTY6MDguMTI3WiIsInBvIjoiaHR0cHM6Ly9kZW1vLWF1dGhzYWZlLmhlcm9rdWFwcC5jb20vbG9naW4ucGhwIiwicmYiOiJodHRwczovL2RlbW8tYXV0aHNhZmUuaGVyb2t1YXBwLmNvbS9pbmRleC5waHAiLCJwcyI6NCwiYm4iOiJOZXRzY2FwZSIsImJsIjoiZW4tVVMiLCJqZSI6MCwibGUiOiJtX3MiLCJkbSI6OCwid2QiOjAsIndnbHYiOiJHb29nbGUgSW5jLiAoSW50ZWwpIiwid2dsciI6IkFOR0xFIChJbnRlbCwgSW50ZWwoUikgSXJpcyhSKSBYZSBHcmFwaGljcyBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsInRlIjpmYWxzZSwibXRwIjowLCJjZSI6MSwiYXgiOiJBY3RpdmVYIE9iamVjdCBub3Qgc3VwcG9ydGVkIiwicGFsIjpbXSwicG0iOjAsIl9fYXN0ayI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpqZFNJNk1UTXlMQ0p3Y2lJNk1qUXhMQ0p6WlhOelgybGtJam9pT1RabFptVXlObVV0WVRFMU5DMDBOekk0TFdJMk1UZ3RaVFEzT0RZek1EQmhOR013SWl3aWFXRjBJam94TmpZeU5EVTRNalU1TENKbGVIQWlPakUyTmpJMU1UVTROVGw5LnpRa2J6cnNlQW5PekFmekNRcFJORUs0Z3o2QTdFN091QnR3Z3UtWWNwc0kiLCJ2c2kiOiI5NmVmZTI2ZS1hMTU0LTQ3MjgtYjYxOC1lNDc4NjMwMGE0YzAiLCJ2ZGkiOiIxM2I4MTQ3My1kOGMzLTRmNTctOWIzMC1hODVkODI3NzViYjQiLCJhc2RpIjoiNmQ2NTQwIiwiYXNiaSI6ImIyZGUyOSIsImFzc2kiOiJlZDA0Yjc5YS0yZGNjLTExZWQtYjU4OS0wMDBjMjlhNWNkOGMiLCJtX20iOjEzLCJzX3UiOjAsInNfZCI6MCwieCI6ODE2LCJ5IjozNzMsInN0IjowLCJ2IjowLCJlbCI6ImJ1dHRvbiIsImVsSUQiOiJsb2dpbi1idXR0b24iLCJjbCI6e319\",\r\n    \"tfs\": {\r\n    \"transaction_id\": 123456789,\r\n    \"transaction_type\": \"Purchase\",\r\n    \"email\": \"admin1@yopmail.com\",\r\n    \"first_name\": \"admin1\",\r\n    \"last_name\": \"admin\",\r\n    \"username\": \"admin\",\r\n    \"user_id\": \"1\",\r\n    \"payment_mode\": \"Digital Wallet\",\r\n    \"payment_provider\": \"Paypal\",\r\n    \"card_fullname\": \"A\",\r\n    \"card_bin\": \"A\",\r\n    \"card_expire\": \"A\",\r\n    \"card_last\": \"A\",\r\n    \"cvv\": \"A\",\r\n    \"phone_no\": \"89067676\",\r\n    \"transaction_amount\": \"148\",\r\n    \"transaction_currency\": \"INR\",\r\n    \"items\": [\r\n        {\r\n            \"item_id\": \"1\",\r\n            \"item_name\": \"Lotus\",\r\n            \"item_category\": \"Flower\",\r\n            \"item_quantity\": \"1\",\r\n            \"item_price\": \"49\",\r\n            \"item_url\": \"A\"\r\n        },\r\n        {\r\n            \"item_id\": \"1\",\r\n            \"item_name\": \"Lily\",\r\n            \"item_category\": \"Flower\",\r\n            \"item_quantity\": \"1\",\r\n            \"item_price\": \"49\",\r\n            \"item_url\": \"A\"\r\n        }\r\n    ],\r\n    \"shipping_country\": \"India\",\r\n    \"shipping_state\": \"UP\",\r\n    \"shipping_city\": \"Bijnor\",\r\n    \"shipping_zip\": \"246734\",\r\n    \"shipping_phone\": \"8989595\",\r\n    \"shipping_fullname\": \"Ashish\",\r\n    \"shipping_method\": \"Standard\",\r\n    \"billing_country\": \"Inida\",\r\n    \"billing_state\": \"UP\",\r\n    \"billing_city\": \"Bijnor\",\r\n    \"billing_zip\": \"246727\",\r\n    \"billing_phone\": \"80578578\",\r\n    \"merchant_name\": \"Flower Valley\",\r\n    \"merchant_category\": \"Flowers\",\r\n    \"merchant_id\": \"123\",\r\n    \"merchant_country\": \"India\"\r\n},\r\n    \"h\": {\r\n      \"ip\": \"45.252.74.134\",\r\n      \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36\",\r\n      \"ho\": \"demo.sensfrx.ai\",\r\n      \"rf\": \"https://demo.sensfrx.ai/login.php\",\r\n      \"ac\": {\r\n        \"a\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\",\r\n        \"ae\": \"gzip, deflate, br\",\r\n        \"al\": \"en-US,en;q=0.9,hi;q=0.8,mr;q=0.7\"\r\n      },\r\n      \"url\": \"http://demo.sensfrx.ai/login.php\"\r\n    }\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://adev.sensfrx.ai/v1/transaction",
+									"protocol": "https",
+									"host": [
+										"adev",
+										"sensfrx",
+										"ai"
+									],
+									"path": [
+										"v1",
+										"transaction"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Device Management",
+			"item": [
+				{
+					"name": "get user devices",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+							}
+						],
+						"url": {
+							"raw": "https://adev.sensfrx.ai/v1/users/15/devices",
+							"protocol": "https",
+							"host": [
+								"adev",
+								"sensfrx",
+								"ai"
+							],
+							"path": [
+								"v1",
+								"users",
+								"15",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "approve device",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+							}
+						],
+						"url": {
+							"raw": "https://adev.sensfrx.ai/v1/devices/W5vBqUgFFxbLT9JWs9f2BoWqAjjrrZDEh02%2FU0J7gl78gOgbd2AwfFyXSkwmW%2BedmKL56ifsbtkl4xFvKaVZ0wFyr8fqUKWN%2BsvbROkVZy0vCt6Usz3L%2BQ9ICfxcOJ4XSr%2BM8aFhIXWPf0fNXGIqJYHS87u%2Fin5Q4a5jmde5GMaIyP7am8vyRQk9dxZ%2B%2FeZ8ZR7NaX0V7JuUmKJm40PZoh7v56xupHUd41GAQQhBPxtlesWZKOqpboQ78anbwF8S8ajxDOdkl4RwEdDnBlEoPDZB%2BbvFXAvTmvqTUL9ETZechcY%2F5XS0MJPqnkrP%2BY2THAEsPHOwD2oa7E7aUIddyq40l3uGBgkE8WyqQ15TkjMD1oDgDr%2BZjT%2BcMtw5Ld98w1CXsGBWnuc3XR5eGewtazxewy4r7CNDVTB6Kyf2kaQJ4kOoOCB7gPJvXAZ7LI0Vxs0ojCm2qCwU30uPAbMEig2DXRuwneRmBJL%2F/approve",
+							"protocol": "https",
+							"host": [
+								"adev",
+								"sensfrx",
+								"ai"
+							],
+							"path": [
+								"v1",
+								"devices",
+								"W5vBqUgFFxbLT9JWs9f2BoWqAjjrrZDEh02%2FU0J7gl78gOgbd2AwfFyXSkwmW%2BedmKL56ifsbtkl4xFvKaVZ0wFyr8fqUKWN%2BsvbROkVZy0vCt6Usz3L%2BQ9ICfxcOJ4XSr%2BM8aFhIXWPf0fNXGIqJYHS87u%2Fin5Q4a5jmde5GMaIyP7am8vyRQk9dxZ%2B%2FeZ8ZR7NaX0V7JuUmKJm40PZoh7v56xupHUd41GAQQhBPxtlesWZKOqpboQ78anbwF8S8ajxDOdkl4RwEdDnBlEoPDZB%2BbvFXAvTmvqTUL9ETZechcY%2F5XS0MJPqnkrP%2BY2THAEsPHOwD2oa7E7aUIddyq40l3uGBgkE8WyqQ15TkjMD1oDgDr%2BZjT%2BcMtw5Ld98w1CXsGBWnuc3XR5eGewtazxewy4r7CNDVTB6Kyf2kaQJ4kOoOCB7gPJvXAZ7LI0Vxs0ojCm2qCwU30uPAbMEig2DXRuwneRmBJL%2F",
+								"approve"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deny device",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic NDE0NzE5ODIzMzEzOTMyNzphdkxHeUF5VE5wY0hxdUg2"
+							}
+						],
+						"url": {
+							"raw": "https://adev.sensfrx.ai/v1/devices/W5vBqUgFFxbLT9JWs9f2BoWqAjjrrZDEh02%2FU0J7gl78gOgbd2AwfFyXSkwmW%2BedmKL56ifsbtkl4xFvKaVZ0wFyr8fqUKWN%2BsvbROkVZy0vCt6Usz3L%2BQ9ICfxcOJ4XSr%2BM8aFhIXWPf0fNXGIqJYHS87u%2Fin5Q4a5jmde5GMaIyP7am8vyRQk9dxZ%2B%2FeZ8ZR7NaX0V7JuUmKJm40PZoh7v56xupHUd41GAQQhBPxtlesWZKOqpboQ78anbwF8S8ajxDOdkl4RwEdDnBlEoPDZB%2BbvFXAvTmvqTUL9ETZechcY%2F5XS0MJPqnkrP%2BY2THAEsPHOwD2oa7E7aUIddyq40l3uGBgkE8WyqQ15TkjMD1oDgDr%2BZjT%2BcMtw5Ld98w1CXsGBWnuc3XR5eGewtazxewy4r7CNDVTB6Kyf2kaQJ4kOoOCB7gPJvXAZ7LI0Vxs0ojCm2qCwU30uPAbMEig2DXRuwneRmBJL%2F/deny",
+							"protocol": "https",
+							"host": [
+								"adev",
+								"sensfrx",
+								"ai"
+							],
+							"path": [
+								"v1",
+								"devices",
+								"W5vBqUgFFxbLT9JWs9f2BoWqAjjrrZDEh02%2FU0J7gl78gOgbd2AwfFyXSkwmW%2BedmKL56ifsbtkl4xFvKaVZ0wFyr8fqUKWN%2BsvbROkVZy0vCt6Usz3L%2BQ9ICfxcOJ4XSr%2BM8aFhIXWPf0fNXGIqJYHS87u%2Fin5Q4a5jmde5GMaIyP7am8vyRQk9dxZ%2B%2FeZ8ZR7NaX0V7JuUmKJm40PZoh7v56xupHUd41GAQQhBPxtlesWZKOqpboQ78anbwF8S8ajxDOdkl4RwEdDnBlEoPDZB%2BbvFXAvTmvqTUL9ETZechcY%2F5XS0MJPqnkrP%2BY2THAEsPHOwD2oa7E7aUIddyq40l3uGBgkE8WyqQ15TkjMD1oDgDr%2BZjT%2BcMtw5Ld98w1CXsGBWnuc3XR5eGewtazxewy4r7CNDVTB6Kyf2kaQJ4kOoOCB7gPJvXAZ7LI0Vxs0ojCm2qCwU30uPAbMEig2DXRuwneRmBJL%2F",
+								"deny"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

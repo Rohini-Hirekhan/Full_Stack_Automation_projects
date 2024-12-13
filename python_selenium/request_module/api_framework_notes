@@ -1,0 +1,19 @@
+framework developement
+--------------------------
+framework- maintain all project related files
+
+objectives-
+1) Re-usability
+2) maintainability
+3) readability
+
+hybrid driven
+
+phases-
+1) understand requirement
+    - functional specification
+    - swagger
+2) choose automation tool - request library
+3) design framework - folder structure,files
+4) development
+5) execution + CI

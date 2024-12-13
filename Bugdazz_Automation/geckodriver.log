@@ -1,0 +1,347 @@
+1695797255008	geckodriver	INFO	Listening on 127.0.0.1:57873
+1695797258106	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57874" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofileAcnD7W"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695797258975	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695797259136	Marionette	INFO	Listening on port 57889
+WebDriver BiDi listening on ws://127.0.0.1:57874
+Read port: 57889
+1695797259499	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57874/devtools/browser/27bea582-7039-4077-84a2-9f0acc1b33d9
+1695799095867	Marionette	INFO	Stopped listening on port 57889
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57975" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofileukQWV2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695797301940	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695797302091	Marionette	INFO	Listening on port 57984
+Read port: 57984
+WebDriver BiDi listening on ws://127.0.0.1:57975
+1695797302235	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57975/devtools/browser/598e481b-d3aa-44b0-a368-3d655717d68d
+1695799097605	Marionette	INFO	Stopped listening on port 57984
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+"--remote-debugging-port" "59387" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofilebRFiAL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695798238874	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695798240183	Marionette	INFO	Listening on port 59438
+WebDriver BiDi listening on ws://127.0.0.1:59387
+Read port: 59438
+1695798240901	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59387/devtools/browser/e22b8de9-8554-4800-afa6-c783b71b1fb8
+JavaScript error: https://res-h3.public.cdn.office.net/owamail/20230915006.15/scripts/owa.mailindex.js, line 2: Error: 401
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.sys.mjs'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 703"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:703:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:556:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:452:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:416:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2167:33
+addAllSources@resource://devtools/server/actors/thread.js:1492:14
+watch@resource://devtools/server/actors/resources/sources.js:78:17
+watchResources@resource://devtools/server/actors/resources/index.js:322:19
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:11:21
+addSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:41:23
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:527:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:436:21
+Line: 703, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 703: Failed to open input source 'resource://gre/modules/ExtensionContent.sys.mjs'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1695799099958	Marionette	INFO	Stopped listening on port 59438
+Dynamically enable window occlusion 1
+ttings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695798385626	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695798385905	Marionette	INFO	Listening on port 59792
+WebDriver BiDi listening on ws://127.0.0.1:59782
+Read port: 59792
+1695798386345	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59782/devtools/browser/70ab4c77-ed40-4771-9298-32ca4c15d976
+JavaScript error: https://res-h3.public.cdn.office.net/owamail/20230915006.15/scripts/owa.mailindex.js, line 2: Error: 401
+JavaScript warning: https://res-h3.public.cdn.office.net/owamail/20230915006.15/scripts/owa.mailindex.js, line 2: Script terminated by timeout at:
+n@https://res-h3.public.cdn.office.net/owamail/20230915006.15/scripts/owa.mailindex.js:2:195684
+r@https://res-h3.public.cdn.office.net/owamail/20230915006.15/scripts/owa.mailindex.js:2:155023
+
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.sys.mjs'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 703"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:703:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:556:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:452:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:416:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2167:33
+addAllSources@resource://devtools/server/actors/thread.js:1492:14
+watch@resource://devtools/server/actors/resources/sources.js:78:17
+watchResources@resource://devtools/server/actors/resources/index.js:322:19
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:11:21
+addSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:41:23
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:527:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:436:21
+Line: 703, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 703: Failed to open input source 'resource://gre/modules/ExtensionContent.sys.mjs'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1695799102584	Marionette	INFO	Stopped listening on port 59792
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+ services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695798450262	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695798450433	Marionette	INFO	Listening on port 59978
+WebDriver BiDi listening on ws://127.0.0.1:59965
+Read port: 59978
+1695798450803	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59965/devtools/browser/41a60205-7664-419e-b2cd-a2e3da3abe39
+JavaScript error: https://res-h3.public.cdn.office.net/owamail/20230915006.15/scripts/owa.mailindex.js, line 2: Error: 401
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+SourceActor threw an exception: [Exception... "Failed to open input source 'resource://gre/modules/ExtensionContent.sys.mjs'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 703"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:703:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:556:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:452:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:416:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2167:33
+addAllSources@resource://devtools/server/actors/thread.js:1492:14
+watch@resource://devtools/server/actors/resources/sources.js:78:17
+watchResources@resource://devtools/server/actors/resources/index.js:322:19
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:11:21
+addSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:41:23
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:527:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:436:21
+Line: 703, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 703: Failed to open input source 'resource://gre/modules/ExtensionContent.sys.mjs'
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: "Unable to find target with innerWindowId:12884901894"
+console.error: "Unable to find target with innerWindowId:12884901894"
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: "Unable to find target with innerWindowId:12884901896"
+console.error: "Unable to find target with innerWindowId:12884901896"
+console.warn: "Error while destroying front:" "inspector" (new Error("Connection closed, pending request to server0.conn0.windowGlobal12884901894/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.error: "Failed to start [root-node] legacy listener for target null" (new Error("Connection closed, pending request to server0.conn0.windowGlobal12884901894/inspectorActor4, type getWalker failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\n_getWalker@resource://devtools/client/fronts/inspector.js:84:30\ninitialize@resource://devtools/client/fronts/inspector.js:73:12\n", "resource://devtools/shared/protocol/Front.js", 106))
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal12884901894/inspectorActor4, type getWalker failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:300:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+_getWalker@resource://devtools/client/fronts/inspector.js:84:30
+initialize@resource://devtools/client/fronts/inspector.js:73:12
+
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: "Unable to find target with innerWindowId:12884901898"
+console.error: "Unable to find target with innerWindowId:12884901898"
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.windowGlobal12884901898/layout24, type getGrids failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetAllGrids@resource://devtools/client/fronts/layout.js:173:17\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:61:25\ngetGrids@resource://devtools/client/inspector/grids/grid-inspector.js:450:35\n", "resource://devtools/shared/protocol/Front.js", 106))
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1695799104160	Marionette	INFO	Stopped listening on port 59978
+Dynamically enable window occlusion 1
+ttings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695798673449	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695798673752	Marionette	INFO	Listening on port 60473
+WebDriver BiDi listening on ws://127.0.0.1:60438
+Read port: 60473
+1695798674730	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60438/devtools/browser/98d12774-fd06-46d3-a113-e77bb02e831d
+1695799089715	Marionette	INFO	Stopped listening on port 60473
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60612" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofile8pGrIn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695798739532	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695798739817	Marionette	INFO	Listening on port 60661
+WebDriver BiDi listening on ws://127.0.0.1:60612
+Read port: 60661
+1695798740385	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60612/devtools/browser/61347cd4-203b-4070-a565-d343c990ca82
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1695799097447	Marionette	INFO	Stopped listening on port 60661
+Dynamically enable window occlusion 1
+osts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofileyFlj8w"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695798862005	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695798862254	Marionette	INFO	Listening on port 61022
+Read port: 61022
+WebDriver BiDi listening on ws://127.0.0.1:60984
+1695798862385	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60984/devtools/browser/239ba761-0903-462f-8793-1ccbc4ef0caf
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+JavaScript warning: https://securelayer7.bugdazz.com/assets/links/fontawesome.js, line 5: Script terminated by timeout at:
+Kt@https://securelayer7.bugdazz.com/assets/links/fontawesome.js:5:16904
+At</<@https://securelayer7.bugdazz.com/assets/links/fontawesome.js:5:26655
+At<@https://securelayer7.bugdazz.com/assets/links/fontawesome.js:5:26528
+
+JavaScript error: resource://gre/actors/BrowserElementParent.sys.mjs, line 21: TypeError: browser is null
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1695799096208	Marionette	INFO	Stopped listening on port 61022
+Dynamically enable window occlusion 1
+ening on ws://127.0.0.1:61210
+Read port: 61223
+1695798979005	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61210/devtools/browser/f4d7e281-ccf0-4c7d-9e86-cf74bc68dd28
+1695799091300	Marionette	INFO	Stopped listening on port 61223
+Dynamically enable window occlusion 1
+1695799112645	geckodriver	INFO	Listening on 127.0.0.1:61556
+1695799115747	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61557" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofileFpkxko"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695799116510	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695799116679	Marionette	INFO	Listening on port 61572
+WebDriver BiDi listening on ws://127.0.0.1:61557
+Read port: 61572
+1695799117029	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61557/devtools/browser/969c5670-977e-43f7-a0bf-5732e6c8057e
+1695799191426	Marionette	INFO	Stopped listening on port 61572
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+"--remote-debugging-port" "61652" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofileS6noTH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695799158095	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695799158245	Marionette	INFO	Listening on port 61661
+WebDriver BiDi listening on ws://127.0.0.1:61652
+Read port: 61661
+1695799158470	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61652/devtools/browser/a150db88-e883-4803-ae56-c3c6a8dacfdd
+1695799187610	Marionette	INFO	Stopped listening on port 61661
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1695799194369	geckodriver	INFO	Listening on 127.0.0.1:61731
+1695799197791	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61732" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofileaTJIQT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695799198605	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695799198766	Marionette	INFO	Listening on port 61744
+WebDriver BiDi listening on ws://127.0.0.1:61732
+Read port: 61744
+1695799199083	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61732/devtools/browser/bd9f6f67-ebd8-4142-8542-844cbfc5e37d
+1695799249191	Marionette	INFO	Stopped listening on port 61744
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+console.error: (new Error("Data is not ready.", "resource://gre/modules/JSONFile.sys.mjs", 178))
+1695799260240	geckodriver	INFO	Listening on 127.0.0.1:61839
+1695799263305	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61840" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofilexBASYy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695799263968	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695799264114	Marionette	INFO	Listening on port 61850
+WebDriver BiDi listening on ws://127.0.0.1:61840
+Read port: 61850
+1695799264379	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61840/devtools/browser/f07a3199-90ea-467c-878c-f3dab8aa47ba
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1746: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1695801521151	Marionette	INFO	Stopped listening on port 61850
+Dynamically enable window occlusion 1
+t" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofileWq30F3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695801085626	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695801085871	Marionette	INFO	Listening on port 63202
+WebDriver BiDi listening on ws://127.0.0.1:63153
+Read port: 63202
+1695801086381	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63153/devtools/browser/b789c5a5-690e-4fe4-800a-f393a1af769e
+1695801520422	Marionette	INFO	Stopped listening on port 63202
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+"--remote-debugging-port" "63340" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofileFnPxyu"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695801131050	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695801131212	Marionette	INFO	Listening on port 63353
+Read port: 63353
+WebDriver BiDi listening on ws://127.0.0.1:63340
+1695801131509	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63340/devtools/browser/32a8be89-bbb3-4693-afe9-52d9f2f2a128
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+JavaScript warning: https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js, line 1: Script terminated by timeout at:
+Jn@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2445514
+Ro@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2468774
+2133/$u/<@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2468551
+2133/ps/<@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2458861
+ps@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2458825
+2133/ps/<@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2458853
+ps@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2458825
+$u@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2468532
+mp@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2468467
+gg@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2482838
+iv@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2482731
+create@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2483033
+_buildNotification@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2802427
+_preBuildNotification@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2801637
+error@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2800175
+errorToast@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:1950963
+showError@https://securelayer7.bugdazz.com/558.44cfef184add6f89.js:1:78221
+3558/MSlogin/<@https://securelayer7.bugdazz.com/558.44cfef184add6f89.js:1:77340
+error@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:730057
+_error@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:729698
+error@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:729460
+9237/U/</<@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:736501
+551/Fe/k.prototype.invoke@https://securelayer7.bugdazz.com/polyfills.200de635e2a9aa8a.js:1:7656
+onInvoke@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2545957
+551/Fe/k.prototype.invoke@https://securelayer7.bugdazz.com/polyfills.200de635e2a9aa8a.js:1:7595
+551/Fe/k.prototype.run@https://securelayer7.bugdazz.com/polyfills.200de635e2a9aa8a.js:1:2680
+551/Fe/</Pe/<@https://securelayer7.bugdazz.com/polyfills.200de635e2a9aa8a.js:1:18675
+551/Fe/k.prototype.invokeTask@https://securelayer7.bugdazz.com/polyfills.200de635e2a9aa8a.js:1:8342
+onInvokeTask@https://securelayer7.bugdazz.com/main.a7d7211b89e55cbd.js:1:2545770
+551/Fe/k.prototype.invokeTask@https://securelayer7.bugdazz.com/polyfills.200de635e2a9aa8a.js:1:8263
+551/Fe/k.prototype.runTask@https://securelayer7.bugdazz.com/polyfills.200de635e2a9aa8a.js:1:3364
+me@https://securelayer7.bugdazz.com/polyfills.200de635e2a9aa8a.js:1:10758
+551/Fe/k.invokeTask@https://securelayer7.bugdazz.com/polyfills.200de635e2a9aa8a.js:1:9513
+551/Fe/k/this.invoke<@https://securelayer7.bugdazz.com/polyfills.200de635e2a9aa8a.js:1:9373
+551/Fe/sn/P/C.args[0]@https://securelayer7.bugdazz.com/polyfills.200de635e2a9aa8a.js:1:41418
+
+JavaScript error: resource://gre/actors/BrowserElementParent.sys.mjs, line 21: TypeError: browser is null
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1695801520600	Marionette	INFO	Stopped listening on port 63353
+Dynamically enable window occlusion 1
+1695806247323	geckodriver	INFO	Listening on 127.0.0.1:50950
+1695806250403	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50951" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofile2XQAoX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695806251666	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695806251842	Marionette	INFO	Listening on port 50963
+WebDriver BiDi listening on ws://127.0.0.1:50951
+Read port: 50963
+1695806252200	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50951/devtools/browser/85cd2ac3-99b9-42ef-90b5-21c1bbc0f5e7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.microsoftonline.com."
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1695812751060	Marionette	INFO	Stopped listening on port 50963
+Dynamically enable window occlusion 1

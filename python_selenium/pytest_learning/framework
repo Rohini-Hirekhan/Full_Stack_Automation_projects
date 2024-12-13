@@ -1,0 +1,136 @@
+How to explain framework -
+RD-
+1) Pl -> python,core java
+2) framework type - data driven framework,keyword driven by using page object model
+3) - POM: As per the Page Object Model, we have maintained a class for every web page. Each web page has a separate class and that class holds the functionality
+ and members of that web page. Separate classes for every individual test.
+
+4) Packages: We have separate packages for Pages and Tests. All the web page related classes come under the Pages package and all the tests related classes come under
+Tests package.
+For example, Home Page and Login Page have separate classes to store element locators. For the login test, there would be a separate class which calls the methods
+from the Home Page class and Login Page class.
+
+5) properties file -- Properties file: This file (config.properties) stores the information that remains static throughout the framework such as browser-specific
+information, application URL, screenshots path, etc.
+All the details which change as per the environment and authorization such as URL, Login Credentials are kept in the config.properties file. Keeping these
+ details in a separate file makes it easy to maintain.
+
+6) Screenshots:  Screenshots will be captured and stored in a separate folder and also the screenshots of failed test cases will be added to the extent reports.
+
+how u implemented oops concept in your framework
+
+because of your effor team reaching the more towards goals
+what is imapct on team because of u?
+
+mukesh motwani -
+1) test data- we dont hard code anything we save it in a different file.
+if in case any data updation is there then we need to just change data here
+no need to change whole data.
+
+-test data - to maintain data and all data is in excel format and appace poi then using testng data provider to pass data to all test scripts
+also use properties file
+
+2) reports/logs
+-extent/allure reports
+
+3) utilities - it will common utility which save your code like reusable code
+so each and every test script can use it
+
+4) unit test framework - pytest ---> test script ---> pom(to generate test script using design pattern)
+
+5) maven - build tool
+
+6)Runner - jenkins,bamboo
+
+we are using python as a programming language and we are using hybrid framework
+IN this hybrid driven we are using data driven and modular driven
+
+we have test data component which actually take care about data
+in test data we have 2 data - test data is coming from excel file and second  is config file
+
+for reporting - we are using allure/extent report
+
+then another component is utility - basically take care of all standard utility
+
+then the scripting part for that we are using pytest
+we are using one of  design pattern called pom
+using pom we have different pages based on that we create test scripts
+
+
+
+
+
+
+Roles and reponsibilities -
+Ans - motwani -
+Automationa activities - development,execution,maintenance
+I majorly involv in all testing activities,sprint planning ,retrospective,daily standup
+also have automation  test which we are maintaining,development of the script,
+development of the framework,execution and maintenance whenever we have new cycle or new build
+we automated test cases and we see any failure we fix it and we re run it
+some resources or backlog (we make progress in our framework in every sprint the enhancement)
+
+ web/api/mobile
+which tools are u using
+
+Ans - RD automation -
+1) Requirement Analysis - collaborate with developement and QA teams to understand application requirements and design effective test automation strategies
+BDD -  keywords - steps definition files - runner
+fresher - understanding requirements
+experienced - strategies / approach
+
+2)test planning -
+contributing to test planning activities, including defining test objectives,scope ,and test schedule
+identify test scenarios that are suitable for automation
+fresher - na
+experienced - eligible for automation - should be done - should noot be done
+
+tool and technology selection:
+evaluate and select appropriate automation tools and frmework based on project requirements, application architecture and technology stack
+fresher -na
+experienced -technical feasibility
+architect - design
+
+Test Script development -
+develop, implement, and maintain automated test scripts using chosen automation tools
+ensure scripts are modular,reusable, and adhere to coding standards
+fresher -
+experienced -review code for fresher
+
+Test execution -
+execute automated test scripts and analyze test results
+identify and report defects, providing detailed information to assist n troubleshooting
+fresher -
+experienced -
+
+continuous integration/cd -
+integrate automated tests into ci/cd pipeline to ensure frequest and efficient tetsing throughout the development lifecycle
+fresher -running pipeline, its being triggered and verify scripts are being triggered
+experienced -
+
+maintenance and enhancement-
+regulary update and maintain existing automated test scripts to apdapt to changes in the application
+enhance and optimizes test scripts for improved eficiency and coverage
+fresher - tools -
+experienced -
+
+collaboration -
+work closely with manual tetsing teams, developers and other stakeholders to ensure comprehensive test coverage
+participate in cross functioanl team meetings to discuss test results , defects, and overall product quality
+
+Documentation -
+create and maintain documentation for automated tests scripts, framework and processes
+develop and update test case and test data as needed
+
+performance and load tetsing -
+design and execute automated performance and load test to assess applications scalability and performance
+
+training and knowledge sharing -
+provide tarining to team members on automation tools,best pratices, and coding standards.
+share knowledge and insights with the team to foster continuous improvement
+
+stay updated on idustry trends
+keep abreast of industry trends, emerging technologies, and best practces in test automation.
+recommend and implement improvement to enhance the overall testing process
+
+

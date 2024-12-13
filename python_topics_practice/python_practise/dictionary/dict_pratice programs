@@ -1,0 +1,41 @@
+Dictionary :
+Q. Write a program to enter name and percentage marks in a dictionary and
+display information on the screen
+
+d={}
+stu=int(input("enter no of stu : "))
+i=1
+while i<=stu:
+    name = input("enter a name : ")
+    per = input("enter a percentage : ")
+    d[name] = per
+    i=i+1
+print(d)
+
+
+Q. Write a program to take dictionary from the keyboard and print the sum
+of values?
+
+Q. Write a program to find number of occurrences of each letter present in
+the given string?
+s=input("enter a string : ")
+d={}
+for x in s:
+    d[x] = d.get(x,0)+1
+for k,v in d.items():
+    print(k , v)
+
+Q. Write a program to find number of occurrences of each vowel present in
+the given string?
+
+s=input("enter a string : ")
+d={}
+v=('a','e','i','o','u')
+for i in s:
+    if i in v:
+        d[i]=d.get(i,0)+1
+print(d)
+
+Q. Write a program to accept student name and marks from the keyboard
+and creates a dictionary. Also display student marks by taking student name
+as input?

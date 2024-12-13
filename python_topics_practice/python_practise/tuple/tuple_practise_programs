@@ -1,0 +1,14 @@
+Tuple :
+Q. Write a program to take a tuple of numbers from the keyboard and print its sum and
+average?
+n =eval(input("enter a tuple number : "))
+n1=len(n)
+sum=0
+for i in n:
+    sum=sum+i
+print(sum)
+print("average:",sum/n1)
+o/p -
+enter a tuple number : 1,2
+3
+average: 1.5
